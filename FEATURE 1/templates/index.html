@@ -1,0 +1,421 @@
+<!-- Frontend HTML -->
+ <!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Electricity Estimation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    </head>
+    <body>
+        <!-- FEATURE 1 PAGE -->
+        <canvas id="usageChart" width="300" height="300"></canvas>
+        <div id="feature1-page" class="page-content">
+            <!-- Screen 1: Basic Inputs -->
+            <div id="screen1" class="screen active">
+                <div class="screen-header">
+                    <h2>📊 Electricity Usage Estimation</h2>
+                    <div class="step-info">Step 1 of 3: Basic Information</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 33%"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="info-card">
+                        <p>Let's start with your home details. This helps us understand your baseline consumption.</p>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="form-label">
+                            <span>🏠</span> Home Type *
+                        </div>
+                        <div class="radio-grid">
+                            <div class="radio-card" data-value="1BHK">
+                                <div class="radio-card-label">1BHK</div>
+                                <input type="radio" name="homeType" value="1BHK">
+                            </div>
+                            <div class="radio-card" data-value="2BHK">
+                                <div class="radio-card-label">2BHK</div>
+                                <input type="radio" name="homeType" value="2BHK">
+                            </div>
+                            <div class="radio-card" data-value="3BHK">
+                                <div class="radio-card-label">3BHK</div>
+                                <input type="radio" name="homeType" value="3BHK">
+                            </div>
+                            <div class="radio-card" data-value="4BHK">
+                                <div class="radio-card-label">4BHK</div>
+                                <input type="radio" name="homeType" value="4BHK">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="form-label">
+                            <span>👨‍👩‍👧‍👦</span> Family Size *
+                        </div>
+                        <div class="slider-container">
+                            <div class="slider-input">
+                                <div class="slider-value" id="familySizeValue">2</div>
+                                <span>people</span>
+                            </div>
+                            <input type="range" id="familySize" min="1" max="10" value="2" step="1">
+                            <div class="slider-labels">
+                                <span>1</span>
+                                <span>5</span>
+                                <span>10</span>
+                            </div>
+                            <div class="helper-text">💡 Typically 1-10 members</div>
+                        </div>
+                    </div>
+
+                    <div class="button-container">
+                        <button class="btn btn-secondary" onclick="navigateToPage(&#39;home&#39;)">← Back to Home</button>
+                        <button class="btn btn-primary btn-large" id="continueStep1" disabled="">Continue →</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Screen 2: Appliance Selection -->
+            <div id="screen2" class="screen">
+                <div class="screen-header">
+                    <h2>📊 Electricity Usage Estimation</h2>
+                    <div class="step-info">Step 2 of 3: Select Your Appliances</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 66%"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="info-card">
+                        <p>Which appliances do you have at home? Select all that apply.</p>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="form-label">Common Appliances</div>
+                        <div class="appliance-grid" id="applianceGrid">
+                            <div class="appliance-card" data-appliance="AC">
+                                <input type="checkbox" name="appliances" value="AC">
+                                <div class="appliance-icon-large">❄️</div>
+                                <div class="appliance-name">AC</div>
+                            </div>
+                            <div class="appliance-card" data-appliance="Fan">
+                                <input type="checkbox" name="appliances" value="Fan">
+                                <div class="appliance-icon-large">🌀</div>
+                                <div class="appliance-name">Fan</div>
+                            </div>
+                            <div class="appliance-card" data-appliance="TV">
+                                <input type="checkbox" name="appliances" value="TV">
+                                <div class="appliance-icon-large">📺</div>
+                                <div class="appliance-name">TV</div>
+                            </div>
+                            <div class="appliance-card" data-appliance="Fridge">
+                                <input type="checkbox" name="appliances" value="Fridge">
+                                <div class="appliance-icon-large">🧊</div>
+                                <div class="appliance-name">Fridge</div>
+                            </div>
+                            <div class="appliance-card" data-appliance="Washing Machine">
+                                <input type="checkbox" name="appliances" value="Washing Machine">
+                                <div class="appliance-icon-large">🧺</div>
+                                <div class="appliance-name">Washing Machine</div>
+                            </div>
+                            <div class="appliance-card" data-appliance="Geyser">
+                                <input type="checkbox" name="appliances" value="Geyser">
+                                <div class="appliance-icon-large">🚿</div>
+                                <div class="appliance-name">Geyser</div>
+                            </div>
+                            <div class="appliance-card" data-appliance="Lights">
+                                <input type="checkbox" name="appliances" value="Lights">
+                                <div class="appliance-icon-large">💡</div>
+                                <div class="appliance-name">Lights</div>
+                            </div>
+                            <div class="appliance-card" data-appliance="Air Cooler">
+                                <input type="checkbox" name="appliances" value="Air Cooler">
+                                <div class="appliance-icon-large">🌬️</div>
+                                <div class="appliance-name">Air Cooler</div>
+                            </div>
+                        </div>
+                        <div class="selection-counter" id="selectionCounter">✅ 0 appliances selected</div>
+                    </div>
+
+                    <div class="button-container">
+                        <button class="btn btn-secondary" onclick="showScreen(&#39;screen1&#39;)">← Back</button>
+                        <button class="btn btn-primary btn-large" id="continueStep2" disabled="">Continue to Details →</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Screen 3: Appliance Details (Dynamic) -->
+            <div id="screen3" class="screen">
+                <div class="screen-header">
+                    <h2>📊 Electricity Usage Estimation</h2>
+                    <div class="step-info" id="detailsStepInfo">Step 3 of 3: Appliance Details (1/1)</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="info-card">
+                        <h3 id="currentApplianceName">❄️ Air Conditioner (AC)</h3>
+                        <p>Tell us how you use this appliance</p>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="form-label">
+                            <span>⏰</span> Usage Hours Per Day *
+                        </div>
+                        <div class="slider-container">
+                            <div class="slider-input">
+                                <div class="slider-value" id="usageHoursValue">8</div>
+                                <span>hours/day</span>
+                            </div>
+                            <input type="range" id="usageHours" min="0" max="24" value="8" step="0.5">
+                            <div class="slider-labels">
+                                <span>0</span>
+                                <span>12</span>
+                                <span>24</span>
+                            </div>
+                            <div class="helper-text">💡 Typical usage: 6-10 hours</div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="form-label">
+                            <span>🔢</span> Quantity *
+                        </div>
+                        <div class="slider-container">
+                            <p style="margin-bottom: 12px; color: #6b7280;">How many do you have?</p>
+                            <div class="quantity-grid">
+                                <div class="quantity-option" data-value="1">1</div>
+                                <div class="quantity-option" data-value="2">2</div>
+                                <div class="quantity-option" data-value="3">3</div>
+                                <div class="quantity-option" data-value="4">4</div>
+                                <div class="quantity-option" data-value="5">5+</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="form-label">
+                            <span>🔧</span> Appliance Condition *
+                        </div>
+                        <div class="slider-container">
+                            <div class="condition-grid">
+                                <div class="condition-option" data-value="new">
+                                    <div class="condition-title">New</div>
+                                    <div class="condition-subtitle">(0-2 years)</div>
+                                </div>
+                                <div class="condition-option" data-value="moderate">
+                                    <div class="condition-title">Moderate</div>
+                                    <div class="condition-subtitle">(3-5 years)</div>
+                                </div>
+                                <div class="condition-option" data-value="old">
+                                    <div class="condition-title">Old</div>
+                                    <div class="condition-subtitle">(5+ years)</div>
+                                </div>
+                            </div>
+                            <div class="helper-text">ℹ️ Older appliances consume more power</div>
+                        </div>
+                    </div>
+
+                    <div class="button-container">
+                        <button class="btn btn-secondary" id="previousAppliance">← Previous</button>
+                        <div style="display: flex; gap: 12px;">
+                            <button class="btn btn-secondary" id="skipAppliance">Skip</button>
+                            <button class="btn btn-primary btn-large" id="nextAppliance">Next Appliance →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Screen 4: Loading -->
+            <div id="screen4" class="screen">
+                <div class="screen-header">
+                    <h2>📊 Electricity Usage Estimation</h2>
+                    <div class="step-info">Analyzing Your Data...</div>
+                </div>
+
+                <div class="card">
+                    <div class="loading-container">
+                        <div class="loading-icon">⚡</div>
+                        <div class="loading-text">Calculating your consumption...</div>
+                        
+                        <div class="loading-steps card">
+                            <div class="loading-step complete">
+                                <span>✓</span>
+                                <span>Home details analyzed</span>
+                            </div>
+                            <div class="loading-step complete">
+                                <span>✓</span>
+                                <span>Appliance data processed</span>
+                            </div>
+                            <div class="loading-step active">
+                                <span>⏳</span>
+                                <span>Estimating monthly usage...</span>
+                            </div>
+                            <div class="loading-step">
+                                <span>⏳</span>
+                                <span>Comparing with benchmarks...</span>
+                            </div>
+                        </div>
+
+                        <div class="loading-progress-bar">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="loadingProgress" style="width: 0%"></div>
+                            </div>
+                            <div style="text-align: center; margin-top: 8px; color: #6b7280;">
+                                <span id="loadingPercentage">0</span>%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Screen 5: Results -->
+            <div id="screen5" class="screen">
+                <div class="results-header">
+                    <div>
+                        <h2>📊 Electricity Usage Estimation Results</h2>
+                        <p style="color: #6b7280; font-size: 14px; margin-top: 8px;">
+                            Based on: <span id="resultsSummary">2BHK • 4 people • 3 appliances</span>
+                        </p>
+                    </div>
+                    <div class="results-actions">
+                        <button class="btn btn-secondary">Download Report</button>
+                        <button class="btn btn-secondary">Share</button>
+                        <button class="btn btn-primary" onclick="resetFeature1()">Start Over</button>
+                    </div>
+                </div>
+
+                <div class="summary-cards">
+                    <div class="summary-card">
+                        <div class="summary-label">
+                            <span>⚡</span> Estimated Usage
+                        </div>
+                        <div class="summary-value" id="estimatedUsage">450</div>
+                        <div class="summary-unit">kWh per month</div>
+                        <div class="comparison higher">
+                            <span>▲</span> 12% higher than average
+                        </div>
+                    </div>
+
+                    <div class="summary-card">
+                        <div class="summary-label">
+                            <span>💰</span> Estimated Bill
+                        </div>
+                        <div class="summary-value" id="estimatedBill">₹ 3,150</div>
+                        <div class="summary-unit">per month</div>
+                        <div class="comparison lower">
+                            <span>▼</span> 5% lower than last month
+                        </div>
+                    </div>
+
+                    <div class="summary-card">
+                        <div class="summary-label">
+                            <span>📊</span> Total Appliances
+                        </div>
+                        <div class="summary-value" id="totalAppliances">3</div>
+                        <div class="summary-unit">active devices</div>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <div class="chart-header">📊 Consumption Breakdown</div>
+                    <div class="pie-chart-wrapper">
+                        <canvas id="pieChart" class="pie-chart"></canvas>
+                        <div class="chart-legend" id="chartLegend">
+                            <!-- Dynamic legend will be inserted here -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button class="btn btn-primary btn-large" onclick="showScreen(&#39;screen6&#39;)">View Detailed Breakdown →</button>
+                    <button class="btn btn-primary btn-large" onclick="showScreen(&#39;screen7&#39;)">Get Optimization Tips →</button>
+                </div>
+            </div>
+
+            <!-- Screen 6: Detailed Breakdown -->
+            <div id="screen6" class="screen">
+                <div class="results-header">
+                    <h2>📊 Detailed Appliance Breakdown</h2>
+                    <div class="results-actions">
+                        <button class="btn btn-secondary" onclick="showScreen(&#39;screen5&#39;)">← Back to Summary</button>
+                        <button class="btn btn-secondary">Export CSV</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <table class="data-table" id="breakdownTable">
+                        <thead>
+                            <tr>
+                                <th>Appliance</th>
+                                <th>Qty</th>
+                                <th>Hours/Day</th>
+                                <th>Power (W)</th>
+                                <th>Monthly (kWh)</th>
+                                <th>Share (%)</th>
+                                <th>Cost (₹)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="breakdownTableBody">
+                            <!-- Dynamic rows will be inserted here -->
+                        </tbody>
+                    </table>
+
+                    <div class="alert" id="alertBox">
+                        <span class="alert-icon">⚠️</span>
+                        <div class="alert-content" id="alertContent">
+                            <!-- Dynamic alert will be inserted here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Screen 7: Suggestions -->
+            <div id="screen7" class="screen">
+                <div class="results-header">
+                    <h2>💡 Smart Suggestions to Reduce Your Bill</h2>
+                    <div class="results-actions">
+                        <button class="btn btn-secondary" onclick="showScreen(&#39;screen5&#39;)">← Back to Results</button>
+                        <button class="btn btn-secondary">Save Suggestions</button>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 16px;">
+                    <p style="color: #6b7280;">Based on your usage, here's how you can save:</p>
+                </div>
+
+                <div id="suggestionsContainer">
+                    <!-- Dynamic suggestions will be inserted here -->
+                </div>
+
+                <div class="card" style="background: #f0fdf4; border: 2px solid #10b981;">
+                    <div style="font-size: 18px; font-weight: 600; color: #1e3a8a; margin-bottom: 16px;">
+                        📊 Total Potential Savings
+                    </div>
+                    <div style="font-size: 14px; color: #1f2937; line-height: 1.8;">
+                        <p>If you implement all suggestions:</p>
+                        <p style="margin-top: 8px;">• <strong>Monthly Bill:</strong> ₹3,150 → ₹2,120 (33% reduction)</p>
+                        <p>• <strong>Annual Savings:</strong> ₹12,360</p>
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button class="btn btn-primary btn-large">Apply to Budget Optimizer →</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button onclick="sendToBackend()">Predict</button>
+
+
+<!-- JS connect -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="{{ url_for('static', filename='js/feature1.js') }}"></script>
+
+
+    </body>
+</html>

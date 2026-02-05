@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Bill Saver - Feature 3</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f8fafc; 
+            color: #1f2937; 
+            padding: 30px;
+        }
+        
+        .page-header {
+            max-width: 1400px;
+            margin: 0 auto 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        
+        .page-header h1 {
+            font-size: 28px;
+            color: #1e3a8a;
+            margin-bottom: 8px;
+        }
+        
+        .page-header p {
+            color: #6b7280;
+            font-size: 14px;
+        }
+        
+        .f3-container { 
+            max-width: 1400px; 
+            margin: 0 auto;
+        }
+        
+        .f3-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            gap: 24px;
+            align-items: flex-start;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        
+        .form-label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .f3-budget-input {
+            width: 100%;
+            padding: 16px;
+            border: 2px solid #3b82f6;
+            border-radius: 8px;
+            font-size: 18px;
+            background: white;
+            color: #1f2937;
+        }
+        
+        .f3-budget-input:focus {
+            outline: none;
+            border-color: #2563eb;
+        }
+        
+        .f3-section-box {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .f3-section-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1e3a8a;
+            margin-bottom: 16px;
+        }
+        
+        .f3-preset-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .f3-preset-pill {
+            padding: 10px 18px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 14px;
+            background: #f3f4f6;
+            color: #1f2937;
+            border: 1px solid #e5e7eb;
+            transition: all 0.3s;
+        }
+        
+        .f3-preset-pill:hover {
+            background: #eff6ff;
+            border-color: #3b82f6;
+            color: #3b82f6;
+            transform: translateY(-2px);
+        }
+        
+        .f3-preset-pill-future {
+            padding: 10px 18px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 14px;
+            background: #f0fdf4;
+            color: #166534;
+            border: 1px solid #bbf7d0;
+            transition: all 0.3s;
+        }
+        
+        .f3-preset-pill-future:hover {
+            background: #dcfce7;
+            border-color: #22c55e;
+            transform: translateY(-2px);
+        }
+        
+        .f3-add-row {
+            display: flex;
+            gap: 8px;
+            margin-top: 16px;
+            flex-wrap: wrap;
+        }
+        
+        .f3-input, .f3-select {
+            padding: 10px 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            flex: 1;
+            min-width: 80px;
+            background: white;
+            color: #1f2937;
+            font-size: 14px;
+        }
+        
+        .f3-input:focus, .f3-select:focus {
+            outline: none;
+            border-color: #3b82f6;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+        }
+        
+        .btn-primary {
+            background: #3b82f6;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        
+        .btn-success {
+            background: #22c55e;
+            color: white;
+        }
+        
+        .btn-success:hover {
+            background: #16a34a;
+            transform: translateY(-2px);
+        }
+        
+        .btn-large {
+            width: 100%;
+            padding: 16px;
+            font-size: 16px;
+        }
+        
+        .f3-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 16px;
+            background: #eff6ff;
+            margin-top: 10px;
+            border-radius: 8px;
+            border-left: 4px solid #3b82f6;
+            color: #1f2937;
+        }
+        
+        .f3-future-item {
+            background: #f0fdf4;
+            border-left: 4px solid #22c55e;
+        }
+        
+        .f3-result-box {
+            background: #eff6ff;
+            border: 2px solid #3b82f6;
+            border-radius: 12px;
+            padding: 24px;
+        }
+        
+        .f3-status {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        
+        .f3-status.success { color: #10b981; }
+        .f3-status.warning { color: #f59e0b; }
+        
+        .f3-total {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1e3a8a;
+        }
+        
+        .f3-plans-box {
+            background: #fef3c7;
+            border: 2px solid #fbbf24;
+            border-radius: 12px;
+            padding: 24px;
+        }
+        
+        .f3-plans-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #92400e;
+            margin-bottom: 16px;
+        }
+        
+        .f3-plan-btn {
+            width: 100%;
+            text-align: left;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s;
+            color: white;
+        }
+        
+        .f3-plan-eco { background: #22c55e; }
+        .f3-plan-eco:hover { background: #16a34a; transform: translateY(-2px); }
+        
+        .f3-plan-balanced { background: #3b82f6; }
+        .f3-plan-balanced:hover { background: #2563eb; transform: translateY(-2px); }
+        
+        .f3-plan-target { background: #ec4899; }
+        .f3-plan-target:hover { background: #db2777; transform: translateY(-2px); }
+        
+        .f3-plan-reset { background: #6366f1; }
+        .f3-plan-reset:hover { background: #4f46e5; transform: translateY(-2px); }
+        
+        .f3-plan-clear { 
+            background: #ef4444; 
+            float: right; 
+            width: auto;
+        }
+        .f3-plan-clear:hover { background: #dc2626; transform: translateY(-2px); }
+        
+        .f3-chart-container {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .f3-table-container {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        
+        #f3-summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+        
+        #f3-summary-table th {
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 12px;
+            color: #6b7280;
+            text-transform: uppercase;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        
+        #f3-summary-table td {
+            padding: 12px;
+            border-bottom: 1px solid #f3f4f6;
+            color: #1f2937;
+        }
+        
+        #f3-summary-table tr:hover {
+            background: #f9fafb;
+        }
+        
+        .f3-sticky-panel {
+            position: sticky;
+            top: 20px;
+        }
+        
+        @media (max-width: 1024px) {
+            .f3-grid {
+                grid-template-columns: 1fr;
+            }
+            .f3-sticky-panel {
+                position: relative;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-header">
+        <h1>⚡ Monthly Bill Saver</h1>
+        <p>Plan your appliances and optimize your budget</p>
+    </div>
+
+    <div class="f3-container">
+        <div class="f3-grid">
+            <!-- Left Panel -->
+            <div>
+                <div class="card">
+                    <div class="form-label">💰 Monthly Budget (₹)</div>
+                    <input type="number" id="f3BudgetInput" value="3000" class="f3-budget-input" placeholder="Enter budget">
+                </div>
+
+                <!-- CURRENT APPLIANCE -->
+                <div class="f3-section-box">
+                    <div class="f3-section-title">🏠 CURRENT APPLIANCE</div>
+                    <div class="f3-preset-container">
+                        <span class="f3-preset-pill" onclick="fillF3('current','Fan','moderate',12,75)">🌬️ Fan</span>
+                        <span class="f3-preset-pill" onclick="fillF3('current','Fridge','old',24,200)">❄️ Fridge</span>
+                        <span class="f3-preset-pill" onclick="fillF3('current','Light','moderate',8,60)">💡 Light</span>
+                        <span class="f3-preset-pill" onclick="fillF3('current','TV','moderate',5,100)">📺 TV</span>
+                    </div>
+                    <div id="f3-current-list"></div>
+                    <div class="f3-add-row">
+                        <input id="f3-c-name" placeholder="Name" class="f3-input" style="flex:2">
+                        <select id="f3-c-cond" class="f3-select" style="flex:1.5">
+                            <option value="new">New</option>
+                            <option value="moderate" selected>OK</option>
+                            <option value="old">Old</option>
+                        </select>
+                        <input id="f3-c-hours" placeholder="Hrs" class="f3-input" style="flex:1">
+                        <input id="f3-c-watts" placeholder="Watts" class="f3-input" style="flex:1">
+                        <input id="f3-c-qty" value="1" placeholder="Qty" class="f3-input" style="flex:0.7">
+                        <button onclick="addF3Item('current')" class="btn btn-primary">Add</button>
+                    </div>
+                </div>
+
+                <!-- FUTURE APPLIANCE -->
+                <div class="f3-section-box">
+                    <div class="f3-section-title">🆕 FUTURE APPLIANCE</div>
+                    <div class="f3-preset-container">
+                        <span class="f3-preset-pill-future" onclick="fillF3('future','AC','new',8,1500)">❄️ AC</span>
+                        <span class="f3-preset-pill-future" onclick="fillF3('future','Geyser','moderate',8,2000)">🚿 Geyser</span>
+                        <span class="f3-preset-pill-future" onclick="fillF3('future','Washing Machine','new',2,500)">🧺 Washer</span>
+                    </div>
+                    <div id="f3-future-list"></div>
+                    <div class="f3-add-row">
+                        <input id="f3-f-name" placeholder="Name" class="f3-input" style="flex:2">
+                        <select id="f3-f-cond" class="f3-select" style="flex:1.5">
+                            <option value="new" selected>New</option>
+                            <option value="moderate">OK</option>
+                            <option value="old">Old</option>
+                        </select>
+                        <input id="f3-f-hours" placeholder="Hrs" class="f3-input" style="flex:1">
+                        <input id="f3-f-watts" placeholder="Watts" class="f3-input" style="flex:1">
+                        <input id="f3-f-qty" value="1" placeholder="Qty" class="f3-input" style="flex:0.7">
+                        <button onclick="addF3Item('future')" class="btn btn-success">Add</button>
+                    </div>
+                </div>
+
+                <button onclick="calcF3()" class="btn btn-primary btn-large">📊 Show Bill & Analysis</button>
+
+                <!-- Result -->
+                <div id="f3-result" class="card f3-result-box" style="display:none">
+                    <div id="f3-status-val" class="f3-status"></div>
+                    <div class="f3-total">Total: ₹<span id="f3-total-val">0</span>/month</div>
+                </div>
+
+                <!-- Plans -->
+                <div id="f3-tips-box" class="card f3-plans-box" style="display:none">
+                    <div class="f3-plans-title">📋 Select Adjustment Plan</div>
+                    <div id="f3-tips-list"></div>
+                </div>
+            </div>
+
+            <!-- Right Panel -->
+            <div class="f3-sticky-panel">
+                <div class="f3-chart-container">
+                    <h3 style="margin-bottom:16px; color:#1e3a8a; font-size:18px">📊 Breakdown</h3>
+                    <canvas id="f3PieChart" width="280" height="280"></canvas>
+                </div>
+                <div class="f3-table-container">
+                    <h3 style="margin-bottom:16px; color:#1e3a8a; font-size:18px">📋 Summary</h3>
+                    <table id="f3-summary-table">
+                        <thead>
+                            <tr>
+                                <th>Appliance</th>
+                                <th>Hrs/Day</th>
+                                <th>Cost (₹)</th>
+                                <th>Share %</th>
+                            </tr>
+                        </thead>
+                        <tbody id="f3-summary-body">
+                            <tr><td colspan="4" style="text-align:center; padding:30px; color:#9ca3af">Add appliances</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let f3PieChart = null, f3ApplianceData = [];
+
+        function fillF3(section, name, condition, hours, watts) {
+            const prefix = section === 'current' ? 'c' : 'f';
+            document.getElementById(`f3-${prefix}-name`).value = name;
+            document.getElementById(`f3-${prefix}-cond`).value = condition;
+            document.getElementById(`f3-${prefix}-hours`).value = hours;
+            document.getElementById(`f3-${prefix}-watts`).value = watts;
+        }
+
+        function addF3Item(section) {
+            const isFuture = section === 'future';
+            const prefix = isFuture ? 'f' : 'c';
+            const name = document.getElementById(`f3-${prefix}-name`).value.trim();
+            const cond = document.getElementById(`f3-${prefix}-cond`).value;
+            const hours = document.getElementById(`f3-${prefix}-hours`).value.trim();
+            const watts = document.getElementById(`f3-${prefix}-watts`).value.trim();
+            const qty = document.getElementById(`f3-${prefix}-qty`).value.trim() || '1';
+
+            if (!name || !hours || !watts) {
+                alert('Please fill all fields');
+                return;
+            }
+
+            const listId = isFuture ? 'f3-future-list' : 'f3-current-list';
+            const div = document.createElement('div');
+            div.className = isFuture ? 'f3-item f3-future-item' : 'f3-item';
+            div.innerHTML = `
+                <span><b>${name}</b> ${isFuture ? '(Future)' : ''} (x${qty})</span>
+                <button class="btn" style="background:#ef4444; color:white; padding:6px 12px; font-size:12px" onclick="this.parentElement.remove(); calcF3();">✕</button>
+                <input type="hidden" class="f3-app-data" data-name="${name}" data-watts="${watts}" data-hours="${hours}" data-original-hours="${hours}" data-cond="${cond}" data-qty="${qty}">
+            `;
+            document.getElementById(listId).appendChild(div);
+            
+            document.getElementById(`f3-${prefix}-name`).value = '';
+            document.getElementById(`f3-${prefix}-hours`).value = '';
+            document.getElementById(`f3-${prefix}-watts`).value = '';
+            document.getElementById(`f3-${prefix}-qty`).value = '1';
+            
+            calcF3();
+        }
+
+        function calcF3() {
+            const apps = Array.from(document.querySelectorAll('.f3-app-data')).map(el => ({
+                name: el.dataset.name, 
+                watts: parseFloat(el.dataset.watts), 
+                hours: parseFloat(el.dataset.hours),
+                originalHours: parseFloat(el.dataset.originalHours), 
+                condition: el.dataset.cond, 
+                qty: parseInt(el.dataset.qty)
+            }));
+            const budget = Number(document.getElementById('f3BudgetInput').value);
+
+            if (apps.length === 0) {
+                document.getElementById('f3-result').style.display = 'none';
+                document.getElementById('f3-tips-box').style.display = 'none';
+                document.getElementById('f3-summary-body').innerHTML = '<tr><td colspan="4" style="text-align:center; padding:30px; color:#9ca3af">Add appliances</td></tr>';
+                if (f3PieChart) { f3PieChart.destroy(); f3PieChart = null; }
+                const canvas = document.getElementById('f3PieChart');
+                const ctx = canvas.getContext('2d');
+                ctx.clearRect(0, 0, 280, 280);
+                return;
+            }
+
+            const condFactors = { new: 1.0, moderate: 1.15, old: 1.3 };
+            f3ApplianceData = apps.map(app => {
+                const factor = condFactors[app.condition] || 1.15;
+                const monthlyKwh = (app.watts / 1000) * app.hours * 30 * app.qty * factor;
+                const cost = Math.round(monthlyKwh * 7);
+                return { ...app, cost, monthlyKwh };
+            });
+
+            const total = f3ApplianceData.reduce((sum, item) => sum + item.cost, 0);
+            document.getElementById('f3-total-val').innerText = total;
+            
+            const statusEl = document.getElementById('f3-status-val');
+            if (total <= budget) {
+                statusEl.innerHTML = '✅ Within Budget – Great job!';
+                statusEl.className = 'f3-status success';
+            } else {
+                statusEl.innerHTML = '⚠️ Over Budget – Reduce usage';
+                statusEl.className = 'f3-status warning';
+            }
+            document.getElementById('f3-result').style.display = 'block';
+
+            const tbody = document.getElementById('f3-summary-body');
+            tbody.innerHTML = f3ApplianceData.map(item => {
+                const percent = ((item.cost / total) * 100).toFixed(1);
+                return `<tr><td><b>${item.name}</b>${item.qty > 1 ? ` (x${item.qty})` : ''}</td><td>${item.hours}h</td><td>₹${item.cost}</td><td>${percent}%</td></tr>`;
+            }).join('');
+
+            updateF3Chart(f3ApplianceData);
+            showF3Plans(total, budget);
+        }
+
+        function showF3Plans(total, budget) {
+            const tipsBox = document.getElementById('f3-tips-box');
+            const list = document.getElementById('f3-tips-list');
+            tipsBox.style.display = 'block';
+            list.innerHTML = '';
+            if (total <= 0) return;
+
+            const ratio = budget / total;
+
+            // Eco Plan
+            const btn1 = document.createElement('button');
+            btn1.className = 'f3-plan-btn f3-plan-eco';
+            btn1.innerHTML = '🌱 Eco Saver (50%)';
+            btn1.onclick = () => {
+                document.querySelectorAll('.f3-app-data').forEach(el => {
+                    el.dataset.hours = (Number(el.dataset.originalHours) * 0.5).toFixed(1);
+                });
+                calcF3();
+            };
+            list.appendChild(btn1);
+
+            // Balanced Plan
+            const btn2 = document.createElement('button');
+            btn2.className = 'f3-plan-btn f3-plan-balanced';
+            btn2.innerHTML = '⚖️ Balanced (75%)';
+            btn2.onclick = () => {
+                document.querySelectorAll('.f3-app-data').forEach(el => {
+                    el.dataset.hours = (Number(el.dataset.originalHours) * 0.75).toFixed(1);
+                });
+                calcF3();
+            };
+            list.appendChild(btn2);
+
+            // Target Plan
+            if (ratio > 0 && ratio <= 1.1) {
+                const btn3 = document.createElement('button');
+                btn3.className = 'f3-plan-btn f3-plan-target';
+                btn3.innerHTML = '🎯 Hit Budget Target';
+                btn3.onclick = () => {
+                    document.querySelectorAll('.f3-app-data').forEach(el => {
+                        el.dataset.hours = (Number(el.dataset.originalHours) * ratio).toFixed(1);
+                    });
+                    calcF3();
+                };
+                list.appendChild(btn3);
+            }
+
+            // Reset Plan
+            const btn4 = document.createElement('button');
+            btn4.className = 'f3-plan-btn f3-plan-reset';
+            btn4.innerHTML = '🔄 Reset to Original';
+            btn4.onclick = () => {
+                document.querySelectorAll('.f3-app-data').forEach(el => {
+                    el.dataset.hours = el.dataset.originalHours;
+                });
+                calcF3();
+            };
+            list.appendChild(btn4);
+
+            // Clear All
+            const div = document.createElement('div');
+            div.style.marginTop = '10px';
+            div.style.overflow = 'hidden';
+            const btn5 = document.createElement('button');
+            btn5.className = 'f3-plan-btn f3-plan-clear';
+            btn5.innerHTML = '🗑️ Reset All';
+            btn5.onclick = () => {
+                document.getElementById('f3-current-list').innerHTML = '';
+                document.getElementById('f3-future-list').innerHTML = '';
+                document.getElementById('f3-summary-body').innerHTML = '<tr><td colspan="4" style="text-align:center; padding:30px; color:#9ca3af">Add appliances</td></tr>';
+                document.getElementById('f3-result').style.display = 'none';
+                tipsBox.style.display = 'none';
+                if (f3PieChart) { f3PieChart.destroy(); f3PieChart = null; }
+                const canvas = document.getElementById('f3PieChart');
+                const ctx = canvas.getContext('2d');
+                ctx.clearRect(0, 0, 280, 280);
+            };
+            div.appendChild(btn5);
+            list.appendChild(div);
+        }
+
+        function updateF3Chart(breakdown) {
+            const canvas = document.getElementById('f3PieChart');
+            const ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, 280, 280);
+
+            const total = breakdown.reduce((sum, item) => sum + item.cost, 0);
+            const colors = ['#ef4444', '#3b82f6', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899', '#14b8a6'];
+            
+            let startAngle = -Math.PI / 2;
+            breakdown.forEach((item, i) => {
+                const sliceAngle = (item.cost / total) * 2 * Math.PI;
+                ctx.fillStyle = colors[i % colors.length];
+                ctx.beginPath();
+                ctx.arc(140, 140, 120, startAngle, startAngle + sliceAngle);
+                ctx.lineTo(140, 140);
+                ctx.fill();
+                ctx.strokeStyle = '#f8fafc';
+                ctx.lineWidth = 2;
+                ctx.stroke();
+                startAngle += sliceAngle;
+            });
+        }
+    </script>
+</body>
+</html>

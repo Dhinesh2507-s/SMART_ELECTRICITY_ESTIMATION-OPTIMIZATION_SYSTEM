@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Feature 2 — Appliance Suggestion</title>
+  <style>
+/* Feature 2 styles (extracted) */
+/* Layout helpers copied from main app for proper alignment */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8fafc;
+  color: #1f2937;
+  margin: 0;
+  padding: 0;
+}
+.main-content {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  transition: all 0.4s ease-out;
+  width:100%;
+  box-sizing: border-box;
+  animation: cardSlideIn 0.5s ease-out;
+}
+@keyframes cardSlideIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+.info-card { background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%); border: 2px solid #3b82f6; border-radius: 10px; padding: 18px 20px; margin-bottom: 24px; }
+.info-card p { margin: 0; font-size: 15px; font-weight: 500; color: #1f2937; line-height: 1.6; }
+.chart-header { font-size: 18px; font-weight: 600; color: #1e3a8a; margin-bottom: 20px; }
+.page-header { margin-bottom: 40px; padding-bottom: 20px; border-bottom: 2px solid #e5e7eb; }
+.page-header h1 { font-size: 28px; font-weight: 700; color: #1e3a8a; margin: 0; }
+.page-header p { font-size: 13px; color: #6b7280; margin: 4px 0 0 0; }
+
+.screen { display: none; opacity: 0; transition: opacity 0.4s ease-in-out; }
+.screen.active { display: block; opacity: 1; animation: slideIn 0.5s ease-out; }
+@keyframes slideIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+.summary-cards { display: flex; gap: 16px; margin-bottom: 24px; width:100%; animation: slideUp 0.6s ease-out; }
+@keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+.summary-card { flex: 1; background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%); border: 2px solid #3b82f6; border-radius: 12px; padding: 24px; text-align: center; box-shadow: 0 2px 8px rgba(59, 130, 246, 0.1); }
+.summary-label { font-size:14px; color: #6b7280; margin-bottom: 8px; font-weight: 700; line-height:1.4; }
+.summary-value { font-size: 32px; font-weight: 800; color: #1e3a8a; margin: 12px 0; line-height:1.2; }
+.summary-unit { font-size: 13px; color: #9ca3af; font-weight: 600; }
+
+.screen-header { margin-bottom:24px; padding-bottom:16px; border-bottom:2px solid #e5e7eb; }
+.screen-header h2 { font-size:24px; color:#1e3a8a; margin-bottom:8px; }
+.step-info { font-size:14px; color:#6b7280; font-weight:500; }
+.progress-bar { width:100%; height:8px; background:#e5e7eb; border-radius:4px; overflow:hidden; margin-top:12px; }
+.progress-fill { height:100%; background:#3b82f6; }
+.form-section { margin-bottom:24px; animation: formSlideIn 0.5s ease-out backwards; }
+.form-section:nth-child(1) { animation-delay: 0.1s; }
+.form-section:nth-child(2) { animation-delay: 0.2s; }
+.form-section:nth-child(3) { animation-delay: 0.3s; }
+.form-section:nth-child(4) { animation-delay: 0.4s; }
+@keyframes formSlideIn { from { opacity: 0; transform: translateX(-20px); } to { opacity: 1; transform: translateX(0); } }
+.form-label { font-size:16px; font-weight:600; margin-bottom:12px; display:flex; align-items:center; gap:8px; }
+.appliance-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; width:100%; }
+.appliance-card { border:1px solid #e5e7eb; border-radius:8px; padding:16px; text-align:center; cursor:pointer; background:white; transition:0.3s; position:relative; }
+.appliance-card:hover { border-color:#60a5fa; transform:scale(1.02); }
+.appliance-card.selected { border:2px solid #3b82f6; background:#eff6ff; }
+.appliance-card input { position:absolute; top:10px; left:10px; }
+.appliance-icon-large { font-size:40px; margin:12px 0; }
+.appliance-name { font-size:14px; font-weight:500; }
+.selection-counter { margin-top:16px; font-size:14px; color:#10b981; font-weight:500; }
+.button-container { display:flex; justify-content:space-between; align-items:center; gap:16px; margin-top:32px; padding-top:24px; border-top:1px solid #e5e7eb; width:100%; flex-wrap:wrap; }
+.btn { padding:10px 24px; border-radius:6px; font-size:14px; cursor:pointer; border:none; transition:0.3s; }
+.btn-primary { background:#3b82f6; color:white; }
+.btn-primary:hover { background:#2563eb; }
+.btn-secondary { background:white; color:#3b82f6; border:1px solid #3b82f6; }
+.btn-secondary:hover { background:#eff6ff; }
+.results-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; width:100%; flex-wrap:wrap; gap:16px; }
+.results-actions { display:flex; gap:12px; align-items:center; justify-content:flex-end; flex-wrap:wrap; }
+.recommendation-card { background:white; border:2px solid #e5e7eb; border-radius:12px; padding:24px; margin-bottom:20px; transition:all 0.3s; opacity:0; transform:translateY(20px); }
+.recommendation-card:hover { border-color:#3b82f6; box-shadow:0 4px 12px rgba(59,130,246,0.1); }
+.recommendations-enter .recommendation-card { animation: slideIn 0.6s ease-out forwards; }
+.recommendations-enter .recommendation-card:nth-child(1) { animation-delay: 0.1s; }
+.recommendations-enter .recommendation-card:nth-child(2) { animation-delay: 0.25s; }
+.recommendations-enter .recommendation-card:nth-child(3) { animation-delay: 0.4s; }
+.recommendations-enter .recommendation-card:nth-child(4) { animation-delay: 0.55s; }
+.recommendations-enter .recommendation-card:nth-child(5) { animation-delay: 0.7s; }
+.recommendation-header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:16px; }
+.recommendation-title { display:flex; gap:12px; align-items:center; }
+.recommendation-icon { font-size:36px; }
+.recommendation-name { font-size:20px; font-weight:600; color:#1e3a8a; }
+.star-rating { background:#fef3c7; padding:6px 12px; border-radius:6px; font-weight:600; color:#92400e; }
+.recommendation-details { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; background:#f8fafc; padding:16px; border-radius:8px; margin:16px 0; width:100%; box-sizing:border-box; }
+.detail-box { text-align:center; padding:12px; }
+.detail-box-label { font-size:12px; color:#6b7280; margin-bottom:4px; }
+.detail-box-value { font-weight:600; color:#1f2937; font-size:16px; }
+.recommendation-brand { background:#eff6ff; padding:12px; border-radius:8px; margin:12px 0; }
+.budget-indicator { padding:4px 12px; border-radius:6px; font-size:12px; font-weight:600; }
+.budget-indicator.within { background:#d1fae5; color:#065f46; }
+.budget-indicator.over { background:#fee2e2; color:#991b1b; }
+
+/* Slider and condition styles */
+.slider-container { padding: 16px 0; width:100%; }
+.slider-input { display:flex; align-items:center; justify-content:center; gap:16px; margin-bottom:16px; flex-wrap:wrap; }
+.slider-value { font-size:28px; font-weight:700; color:#1e3a8a; min-width:100px; text-align:center; }
+input[type="range"] { width:100%; height:10px; border-radius:6px; background:#e5e7eb; outline:none; -webkit-appearance:none; cursor:pointer; }
+input[type="range"]::-webkit-slider-thumb { -webkit-appearance:none; appearance:none; width:24px; height:24px; border-radius:50%; background:#3b82f6; cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,0.2); }
+input[type="range"]::-moz-range-thumb { width:24px; height:24px; border-radius:50%; background:#3b82f6; cursor:pointer; border:none; box-shadow:0 2px 6px rgba(0,0,0,0.2); }
+.slider-labels { display:flex; justify-content:space-between; font-size:12px; color:#6b7280; margin-top:8px; }
+
+.condition-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; width:100%; }
+.condition-option { border:1px solid #e5e7eb; border-radius:8px; padding:20px; text-align:center; cursor:pointer; transition:all 0.3s; }
+.condition-option:hover { border-color:#60a5fa; }
+.condition-option.selected { border:2px solid #3b82f6; background:#eff6ff; }
+.condition-title { font-size:16px; font-weight:600; color:#1f2937; margin-bottom:4px; }
+.condition-subtitle { font-size:13px; color:#6b7280; font-weight:500; }
+@media (max-width:768px) { .appliance-grid { grid-template-columns:repeat(2,1fr); } .recommendation-details { grid-template-columns:1fr; } .button-container { flex-direction:column; gap:12px; } }
+  </style>
+</head>
+<body>
+  <div class="main-content">
+    <div class="page-header">
+      <h1>⚡ Smart Electricity System Dashboard</h1>
+      <p>Smart appliance suggestions based on your needs and budget</p>
+    </div>
+    <div id="feature2-page" class="page-content">
+    <!-- Screen 1: Input Selection -->
+    <div id="f2-screen1" class="screen active">
+      <div class="screen-header">
+        <h2>🛒 Appliance Suggestion (Budget-Based)</h2>
+        <div class="step-info">Step 1 of 2: Your Requirements</div>
+        <div class="progress-bar"><div class="progress-fill" style="width:50%"></div></div>
+      </div>
+
+      <div class="card">
+        <div class="info-card">
+          <p>Tell us what appliances you're planning to buy and we'll recommend the best options for your budget and needs.</p>
+        </div>
+
+        <div class="form-section">
+          <div class="form-label"><span>🛍️</span> Appliances Planning to Buy *</div>
+          <div class="appliance-grid" id="f2ApplianceGrid">
+            <div class="appliance-card" data-appliance="AC">
+              <input type="checkbox" name="f2appliances" value="AC">
+              <div class="appliance-icon-large">❄️</div>
+              <div class="appliance-name">AC</div>
+            </div>
+            <div class="appliance-card" data-appliance="Fan">
+              <input type="checkbox" name="f2appliances" value="Fan">
+              <div class="appliance-icon-large">🌀</div>
+              <div class="appliance-name">Fan</div>
+            </div>
+            <div class="appliance-card" data-appliance="TV">
+              <input type="checkbox" name="f2appliances" value="TV">
+              <div class="appliance-icon-large">📺</div>
+              <div class="appliance-name">TV</div>
+            </div>
+            <div class="appliance-card" data-appliance="Fridge">
+              <input type="checkbox" name="f2appliances" value="Fridge">
+              <div class="appliance-icon-large">🧊</div>
+              <div class="appliance-name">Fridge</div>
+            </div>
+            <div class="appliance-card" data-appliance="Washing Machine">
+              <input type="checkbox" name="f2appliances" value="Washing Machine">
+              <div class="appliance-icon-large">🧺</div>
+              <div class="appliance-name">Washing Machine</div>
+            </div>
+            <div class="appliance-card" data-appliance="Geyser">
+              <input type="checkbox" name="f2appliances" value="Geyser">
+              <div class="appliance-icon-large">🚿</div>
+              <div class="appliance-name">Geyser</div>
+            </div>
+            <div class="appliance-card" data-appliance="Microwave">
+              <input type="checkbox" name="f2appliances" value="Microwave">
+              <div class="appliance-icon-large">📻</div>
+              <div class="appliance-name">Microwave</div>
+            </div>
+            <div class="appliance-card" data-appliance="Air Purifier">
+              <input type="checkbox" name="f2appliances" value="Air Purifier">
+              <div class="appliance-icon-large">🌬️</div>
+              <div class="appliance-name">Air Purifier</div>
+            </div>
+          </div>
+          <div class="selection-counter" id="f2SelectionCounter">✅ 0 appliances selected</div>
+        </div>
+
+        <div class="form-section">
+          <div class="form-label"><span>👨‍👩‍👧‍👦</span> Family Size *</div>
+          <div class="slider-container">
+            <div class="slider-input">
+              <div class="slider-value" id="f2FamilySizeValue">4</div>
+              <span>people</span>
+            </div>
+            <input type="range" id="f2FamilySize" min="1" max="10" value="4" step="1">
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="form-label"><span>⚡</span> Expected Usage Level *</div>
+          <div class="condition-grid">
+            <div class="condition-option f2-usage" data-value="light"><div class="condition-title">Light</div><div class="condition-subtitle">2-4 hours/day</div></div>
+            <div class="condition-option f2-usage selected" data-value="moderate"><div class="condition-title">Moderate</div><div class="condition-subtitle">4-8 hours/day</div></div>
+            <div class="condition-option f2-usage" data-value="heavy"><div class="condition-title">Heavy</div><div class="condition-subtitle">8+ hours/day</div></div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="form-label"><span>💰</span> Total Budget *</div>
+          <div class="slider-container">
+            <div class="slider-input"><span>₹</span><div class="slider-value" id="f2BudgetValue">50,000</div></div>
+            <input type="range" id="f2Budget" min="10000" max="200000" value="50000" step="5000">
+          </div>
+        </div>
+
+        <div class="button-container">
+          <button class="btn btn-secondary" id="f2BackToHome">← Back to Home</button>
+          <button class="btn btn-primary btn-large" id="f2Continue" disabled>Get Recommendations →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Screen 2: Recommendations -->
+    <div id="f2-screen2" class="screen">
+      <div class="results-header">
+        <h2>🛒 Appliance Recommendations</h2>
+        <div class="results-actions">
+          <button class="btn btn-secondary" id="f2BackBtn">← Back</button>
+          <button class="btn btn-secondary" id="f2DownloadBtn">Download List</button>
+          <button class="btn btn-primary" id="f2ResetBtn">Start Over</button>
+        </div>
+      </div>
+
+      <div class="summary-cards">
+        <div class="summary-card">
+          <div class="summary-label"><span>💰</span> Total Budget</div>
+          <div class="summary-value" id="f2TotalBudget">₹ 50,000</div>
+          <div class="summary-unit">allocated</div>
+        </div>
+        <div class="summary-card">
+          <div class="summary-label"><span>🛍️</span> Recommended Cost</div>
+          <div class="summary-value" id="f2RecommendedCost">₹ 45,000</div>
+          <div class="summary-unit">total price</div>
+        </div>
+        <div class="summary-card">
+          <div class="summary-label"><span>📊</span> Budget Status</div>
+          <div class="summary-value" id="f2BudgetStatus">✅</div>
+          <div class="summary-unit" id="f2StatusText">Within Budget</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="chart-header">💡 Your Personalized Recommendations</div>
+        <div id="f2RecommendationsContainer"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,501 @@
+Appliance_ID,Category,Sub_Type,Brand,Star_Rating,Price_INR,Annual_kWh,Use_Case,Investment_Type
+IND-2026-001,Washing Machine,Semi-Automatic,Atomberg,3,14280.0,63.0,Value for Money,Standard
+IND-2026-002,Air Conditioner,Window,Preethi,3,32600.0,144.0,Value for Money,Standard
+IND-2026-003,Water Purifier,UV + UF,Daikin,5,11620.0,13.5,Energy Saver,One-time Premium
+IND-2026-004,Air Conditioner,Split Inverter,Preethi,4,51720.0,144.0,Value for Money,One-time Premium
+IND-2026-005,Ceiling Fan,BLDC Motor,Havells,3,3670.0,15.7,Value for Money,One-time Premium
+IND-2026-006,Microwave Oven,Convection,Havells,3,16320.0,72.0,Value for Money,Standard
+IND-2026-007,Ceiling Fan,BLDC Motor,Havells,5,5090.0,5.2,Energy Saver,One-time Premium
+IND-2026-008,Water Purifier,Gravity/Non-Electric,Daikin,5,3410.0,4.5,Energy Saver,One-time Premium
+IND-2026-009,Microwave Oven,Convection,LG,3,16830.0,72.0,Value for Money,Standard
+IND-2026-010,Air Conditioner,Window,Pureit,3,31590.0,144.0,Value for Money,Standard
+IND-2026-011,Water Purifier,RO + UV + MTDS,Bosch,3,15660.0,67.5,Value for Money,Standard
+IND-2026-012,Microwave Oven,Convection,Pureit,4,17260.0,48.0,Value for Money,Standard
+IND-2026-013,LED Light,Smart LED,Samsung,3,650.0,3.6,Value for Money,Standard
+IND-2026-014,Microwave Oven,Solo,Philips,3,8050.0,31.5,Value for Money,Standard
+IND-2026-015,Microwave Oven,Solo,Samsung,4,8320.0,21.0,Value for Money,Standard
+IND-2026-016,Mixer Grinder,Juicer Mixer (JMG),Bosch,5,6200.0,8.2,Energy Saver,One-time Premium
+IND-2026-017,Mixer Grinder,Standard 3-Jar,Pureit,4,4690.0,10.5,Value for Money,Standard
+IND-2026-018,Water Purifier,UV + UF,Havells,5,11590.0,13.5,Energy Saver,One-time Premium
+IND-2026-019,Washing Machine,Semi-Automatic,LG,5,17130.0,21.0,Energy Saver,One-time Premium
+IND-2026-020,Washing Machine,Semi-Automatic,Samsung,3,13520.0,63.0,Value for Money,Standard
+IND-2026-021,LED Light,Batten/Tube,LG,4,1720.0,1.3,Value for Money,Standard
+IND-2026-022,LED Light,Batten/Tube,Philips,4,360.0,1.3,Value for Money,Standard
+IND-2026-023,Washing Machine,Front Load,Samsung,4,38810.0,105.0,Value for Money,Standard
+IND-2026-024,Water Purifier,UV + UF,Bosch,4,10850.0,27.0,Value for Money,Standard
+IND-2026-025,LED Light,Panel Light,Atomberg,4,900.0,1.8,Value for Money,Standard
+IND-2026-026,Mixer Grinder,Food Processor,Daikin,4,10410.0,27.0,Value for Money,Standard
+IND-2026-027,Smart TV,QLED,LG,4,59240.0,165.0,Value for Money,Standard
+IND-2026-028,Mixer Grinder,Food Processor,LG,5,11880.0,13.5,Energy Saver,One-time Premium
+IND-2026-029,Refrigerator,Double Door,Preethi,3,32970.0,144.0,Value for Money,Standard
+IND-2026-030,Mixer Grinder,Standard 3-Jar,Daikin,5,5460.0,5.2,Energy Saver,One-time Premium
+IND-2026-031,Air Conditioner,Split Inverter,LG,4,53080.0,144.0,Value for Money,One-time Premium
+IND-2026-032,Microwave Oven,Grill,LG,3,12330.0,49.5,Value for Money,Standard
+IND-2026-033,Mixer Grinder,Juicer Mixer (JMG),Bosch,4,7320.0,16.5,Value for Money,Standard
+IND-2026-034,Washing Machine,Top Load,Preethi,3,21940.0,99.0,Value for Money,Standard
+IND-2026-035,Mixer Grinder,Juicer Mixer (JMG),Havells,5,7330.0,8.2,Energy Saver,One-time Premium
+IND-2026-036,Mixer Grinder,Juicer Mixer (JMG),LG,4,6890.0,16.5,Value for Money,Standard
+IND-2026-037,Washing Machine,Semi-Automatic,Daikin,5,16420.0,21.0,Energy Saver,One-time Premium
+IND-2026-038,Air Conditioner,Window,Preethi,4,34070.0,96.0,Value for Money,Standard
+IND-2026-039,Refrigerator,Single Door,Atomberg,4,20070.0,54.0,Value for Money,Standard
+IND-2026-040,LED Light,Batten/Tube,Havells,3,1340.0,2.0,Value for Money,Standard
+IND-2026-041,Mixer Grinder,Food Processor,Bosch,3,9460.0,40.5,Value for Money,Standard
+IND-2026-042,Microwave Oven,Convection,Bosch,5,19070.0,24.0,Energy Saver,One-time Premium
+IND-2026-043,Refrigerator,Side-by-Side,Daikin,3,84710.0,382.5,Value for Money,Standard
+IND-2026-044,Water Purifier,Gravity/Non-Electric,Samsung,4,4120.0,9.0,Value for Money,Standard
+IND-2026-045,Refrigerator,Single Door,Atomberg,5,21960.0,27.0,Energy Saver,One-time Premium
+IND-2026-046,LED Light,Panel Light,Daikin,4,540.0,1.8,Value for Money,Standard
+IND-2026-047,Mixer Grinder,Juicer Mixer (JMG),Pureit,4,7150.0,16.5,Value for Money,Standard
+IND-2026-048,Smart TV,LED,Atomberg,3,24070.0,108.0,Value for Money,Standard
+IND-2026-049,Smart TV,OLED,Bosch,3,111130.0,495.0,Value for Money,Standard
+IND-2026-050,Microwave Oven,Convection,Preethi,5,19680.0,24.0,Energy Saver,One-time Premium
+IND-2026-051,Smart TV,QLED,Atomberg,3,54910.0,247.5,Value for Money,Standard
+IND-2026-052,LED Light,Smart LED,Samsung,4,2060.0,2.4,Value for Money,Standard
+IND-2026-053,Ceiling Fan,BLDC Motor,Atomberg,5,5080.0,5.2,Energy Saver,One-time Premium
+IND-2026-054,Ceiling Fan,BLDC Motor,Havells,4,3660.0,10.5,Value for Money,One-time Premium
+IND-2026-055,LED Light,Batten/Tube,Bosch,5,1110.0,0.7,Energy Saver,One-time Premium
+IND-2026-056,Smart TV,LED,Bosch,4,26570.0,72.0,Value for Money,Standard
+IND-2026-057,Refrigerator,Double Door,Havells,5,37310.0,48.0,Energy Saver,One-time Premium
+IND-2026-058,Smart TV,LED,Pureit,4,25820.0,72.0,Value for Money,Standard
+IND-2026-059,Water Purifier,Gravity/Non-Electric,LG,4,4200.0,9.0,Value for Money,Standard
+IND-2026-060,Refrigerator,Single Door,Preethi,3,18100.0,81.0,Value for Money,Standard
+IND-2026-061,Ceiling Fan,BLDC Motor,Samsung,4,3570.0,10.5,Value for Money,One-time Premium
+IND-2026-062,LED Light,Smart LED,Havells,4,620.0,2.4,Value for Money,Standard
+IND-2026-063,Air Conditioner,Split Inverter,Pureit,5,55770.0,72.0,Energy Saver,One-time Premium
+IND-2026-064,Smart TV,OLED,Bosch,3,110860.0,495.0,Value for Money,Standard
+IND-2026-065,Smart TV,QLED,Pureit,5,63930.0,82.5,Energy Saver,One-time Premium
+IND-2026-066,Microwave Oven,Grill,Philips,4,12120.0,33.0,Value for Money,Standard
+IND-2026-067,Water Purifier,UV + UF,Philips,5,10240.0,13.5,Energy Saver,One-time Premium
+IND-2026-068,Water Purifier,UV + UF,Samsung,4,10120.0,27.0,Value for Money,Standard
+IND-2026-069,Refrigerator,Side-by-Side,Philips,3,85040.0,382.5,Value for Money,Standard
+IND-2026-070,Smart TV,LED,Philips,4,27000.0,72.0,Value for Money,Standard
+IND-2026-071,LED Light,Batten/Tube,LG,3,1130.0,2.0,Value for Money,Standard
+IND-2026-072,LED Light,Smart LED,Preethi,4,420.0,2.4,Value for Money,Standard
+IND-2026-073,Water Purifier,UV + UF,Atomberg,4,10920.0,27.0,Value for Money,Standard
+IND-2026-074,Air Conditioner,Split Non-Inverter,Preethi,5,44080.0,57.0,Energy Saver,One-time Premium
+IND-2026-075,Microwave Oven,Convection,Havells,3,17430.0,72.0,Value for Money,Standard
+IND-2026-076,Washing Machine,Top Load,Bosch,5,25390.0,33.0,Energy Saver,One-time Premium
+IND-2026-077,Washing Machine,Top Load,Philips,4,24280.0,66.0,Value for Money,Standard
+IND-2026-078,Water Purifier,RO + UV + MTDS,Pureit,3,15100.0,67.5,Value for Money,Standard
+IND-2026-079,Air Conditioner,Split Inverter,Atomberg,4,52680.0,144.0,Value for Money,One-time Premium
+IND-2026-080,Water Purifier,UV + UF,Pureit,5,11600.0,13.5,Energy Saver,One-time Premium
+IND-2026-081,Smart TV,OLED,Atomberg,3,109800.0,495.0,Value for Money,Standard
+IND-2026-082,Smart TV,QLED,Samsung,5,64270.0,82.5,Energy Saver,One-time Premium
+IND-2026-083,Washing Machine,Top Load,Pureit,4,23570.0,66.0,Value for Money,Standard
+IND-2026-084,Mixer Grinder,Standard 3-Jar,Pureit,4,3980.0,10.5,Value for Money,Standard
+IND-2026-085,Microwave Oven,Grill,Daikin,4,11400.0,33.0,Value for Money,Standard
+IND-2026-086,Air Conditioner,Window,Havells,4,34510.0,96.0,Value for Money,Standard
+IND-2026-087,Water Purifier,UV + UF,Preethi,5,11910.0,13.5,Energy Saver,One-time Premium
+IND-2026-088,Smart TV,OLED,Daikin,4,119320.0,330.0,Value for Money,Standard
+IND-2026-089,Smart TV,QLED,Samsung,5,64850.0,82.5,Energy Saver,One-time Premium
+IND-2026-090,Smart TV,LED,Philips,5,27760.0,36.0,Energy Saver,One-time Premium
+IND-2026-091,Washing Machine,Front Load,Atomberg,5,41020.0,52.5,Energy Saver,One-time Premium
+IND-2026-092,LED Light,Panel Light,Atomberg,5,260.0,0.9,Energy Saver,One-time Premium
+IND-2026-093,Smart TV,QLED,Preethi,3,54950.0,247.5,Value for Money,Standard
+IND-2026-094,Ceiling Fan,Induction Motor,Bosch,5,1900.0,2.7,Energy Saver,One-time Premium
+IND-2026-095,Mixer Grinder,Standard 3-Jar,Preethi,4,4320.0,10.5,Value for Money,Standard
+IND-2026-096,Mixer Grinder,Food Processor,Samsung,5,10100.0,13.5,Energy Saver,One-time Premium
+IND-2026-097,Mixer Grinder,Standard 3-Jar,Atomberg,5,4800.0,5.2,Energy Saver,One-time Premium
+IND-2026-098,Mixer Grinder,Food Processor,Pureit,5,11260.0,13.5,Energy Saver,One-time Premium
+IND-2026-099,LED Light,Batten/Tube,Bosch,4,1670.0,1.3,Value for Money,Standard
+IND-2026-100,Air Conditioner,Split Non-Inverter,Bosch,3,38650.0,171.0,Value for Money,One-time Premium
+IND-2026-101,Ceiling Fan,BLDC Motor,Preethi,3,4250.0,15.7,Value for Money,One-time Premium
+IND-2026-102,Ceiling Fan,BLDC Motor,Philips,3,3900.0,15.7,Value for Money,One-time Premium
+IND-2026-103,Air Conditioner,Split Inverter,Samsung,3,49480.0,216.0,Value for Money,One-time Premium
+IND-2026-104,LED Light,Panel Light,Atomberg,5,1630.0,0.9,Energy Saver,One-time Premium
+IND-2026-105,Air Conditioner,Split Non-Inverter,Philips,5,44240.0,57.0,Energy Saver,One-time Premium
+IND-2026-106,LED Light,Smart LED,Havells,5,540.0,1.2,Energy Saver,One-time Premium
+IND-2026-107,LED Light,Panel Light,Philips,3,1370.0,2.7,Value for Money,Standard
+IND-2026-108,Smart TV,QLED,Daikin,4,59350.0,165.0,Value for Money,Standard
+IND-2026-109,Ceiling Fan,Induction Motor,Atomberg,4,3130.0,5.4,Value for Money,Standard
+IND-2026-110,Mixer Grinder,Standard 3-Jar,Philips,3,4180.0,15.7,Value for Money,Standard
+IND-2026-111,Mixer Grinder,Standard 3-Jar,Philips,3,4490.0,15.7,Value for Money,Standard
+IND-2026-112,LED Light,Smart LED,Havells,4,1630.0,2.4,Value for Money,Standard
+IND-2026-113,Microwave Oven,Grill,Preethi,5,13020.0,16.5,Energy Saver,One-time Premium
+IND-2026-114,Smart TV,LED,Pureit,5,29300.0,36.0,Energy Saver,One-time Premium
+IND-2026-115,Washing Machine,Semi-Automatic,Philips,4,16450.0,42.0,Value for Money,Standard
+IND-2026-116,Air Conditioner,Window,Daikin,4,35180.0,96.0,Value for Money,Standard
+IND-2026-117,Refrigerator,Single Door,Havells,5,21440.0,27.0,Energy Saver,One-time Premium
+IND-2026-118,Ceiling Fan,BLDC Motor,Preethi,4,4610.0,10.5,Value for Money,One-time Premium
+IND-2026-119,Mixer Grinder,Food Processor,LG,4,9700.0,27.0,Value for Money,Standard
+IND-2026-120,Microwave Oven,Solo,Havells,5,8640.0,10.5,Energy Saver,One-time Premium
+IND-2026-121,Smart TV,QLED,Daikin,5,64950.0,82.5,Energy Saver,One-time Premium
+IND-2026-122,Ceiling Fan,BLDC Motor,LG,3,3100.0,15.7,Value for Money,One-time Premium
+IND-2026-123,Water Purifier,UV + UF,Philips,4,9910.0,27.0,Value for Money,Standard
+IND-2026-124,Air Conditioner,Split Inverter,Philips,4,53130.0,144.0,Value for Money,One-time Premium
+IND-2026-125,Water Purifier,UV + UF,Daikin,4,9480.0,27.0,Value for Money,Standard
+IND-2026-126,Refrigerator,Double Door,Atomberg,4,35920.0,96.0,Value for Money,Standard
+IND-2026-127,Microwave Oven,Grill,LG,5,13980.0,16.5,Energy Saver,One-time Premium
+IND-2026-128,Water Purifier,Gravity/Non-Electric,LG,4,3480.0,9.0,Value for Money,Standard
+IND-2026-129,LED Light,Smart LED,Bosch,5,680.0,1.2,Energy Saver,One-time Premium
+IND-2026-130,Ceiling Fan,BLDC Motor,LG,4,4080.0,10.5,Value for Money,One-time Premium
+IND-2026-131,LED Light,Batten/Tube,Samsung,4,1850.0,1.3,Value for Money,Standard
+IND-2026-132,Washing Machine,Top Load,Daikin,3,21970.0,99.0,Value for Money,Standard
+IND-2026-133,LED Light,Panel Light,Havells,5,1110.0,0.9,Energy Saver,One-time Premium
+IND-2026-134,Microwave Oven,Solo,Havells,5,9470.0,10.5,Energy Saver,One-time Premium
+IND-2026-135,Microwave Oven,Solo,Pureit,4,7740.0,21.0,Value for Money,Standard
+IND-2026-136,Microwave Oven,Grill,Havells,4,12780.0,33.0,Value for Money,Standard
+IND-2026-137,Microwave Oven,Convection,Preethi,4,17790.0,48.0,Value for Money,Standard
+IND-2026-138,Ceiling Fan,BLDC Motor,Preethi,5,4340.0,5.2,Energy Saver,One-time Premium
+IND-2026-139,LED Light,Panel Light,Pureit,4,1020.0,1.8,Value for Money,Standard
+IND-2026-140,Mixer Grinder,Standard 3-Jar,Philips,5,4640.0,5.2,Energy Saver,One-time Premium
+IND-2026-141,Smart TV,QLED,Atomberg,4,59070.0,165.0,Value for Money,Standard
+IND-2026-142,Refrigerator,Side-by-Side,Preethi,4,91440.0,255.0,Value for Money,Standard
+IND-2026-143,Refrigerator,Double Door,LG,5,36940.0,48.0,Energy Saver,One-time Premium
+IND-2026-144,Microwave Oven,Convection,Atomberg,3,16510.0,72.0,Value for Money,Standard
+IND-2026-145,LED Light,Batten/Tube,Daikin,5,380.0,0.7,Energy Saver,One-time Premium
+IND-2026-146,Water Purifier,RO + UV + MTDS,Preethi,5,18080.0,22.5,Energy Saver,One-time Premium
+IND-2026-147,Air Conditioner,Split Non-Inverter,Preethi,5,45230.0,57.0,Energy Saver,One-time Premium
+IND-2026-148,Ceiling Fan,BLDC Motor,Atomberg,5,4970.0,5.2,Energy Saver,One-time Premium
+IND-2026-149,Air Conditioner,Split Inverter,LG,5,57160.0,72.0,Energy Saver,One-time Premium
+IND-2026-150,Mixer Grinder,Juicer Mixer (JMG),Atomberg,5,6350.0,8.2,Energy Saver,One-time Premium
+IND-2026-151,LED Light,Panel Light,Pureit,4,1960.0,1.8,Value for Money,Standard
+IND-2026-152,LED Light,Panel Light,Havells,5,560.0,0.9,Energy Saver,One-time Premium
+IND-2026-153,Water Purifier,Gravity/Non-Electric,Daikin,4,3870.0,9.0,Value for Money,Standard
+IND-2026-154,Washing Machine,Front Load,Preethi,4,39120.0,105.0,Value for Money,Standard
+IND-2026-155,LED Light,Panel Light,Philips,4,1440.0,1.8,Value for Money,Standard
+IND-2026-156,Refrigerator,Single Door,Atomberg,4,19330.0,54.0,Value for Money,Standard
+IND-2026-157,Mixer Grinder,Standard 3-Jar,Bosch,5,5410.0,5.2,Energy Saver,One-time Premium
+IND-2026-158,Microwave Oven,Grill,Pureit,3,10800.0,49.5,Value for Money,Standard
+IND-2026-159,Water Purifier,UV + UF,Samsung,4,9330.0,27.0,Value for Money,Standard
+IND-2026-160,Water Purifier,Gravity/Non-Electric,Preethi,4,3010.0,9.0,Value for Money,Standard
+IND-2026-161,Refrigerator,Side-by-Side,Philips,5,98550.0,127.5,Energy Saver,One-time Premium
+IND-2026-162,Smart TV,QLED,Preethi,4,59350.0,165.0,Value for Money,Standard
+IND-2026-163,LED Light,Batten/Tube,Samsung,4,1670.0,1.3,Value for Money,Standard
+IND-2026-164,Smart TV,OLED,Preethi,4,120250.0,330.0,Value for Money,Standard
+IND-2026-165,Smart TV,LED,LG,5,27360.0,36.0,Energy Saver,One-time Premium
+IND-2026-166,Washing Machine,Front Load,Daikin,3,34990.0,157.5,Value for Money,Standard
+IND-2026-167,Water Purifier,UV + UF,Daikin,4,10380.0,27.0,Value for Money,Standard
+IND-2026-168,Mixer Grinder,Standard 3-Jar,Philips,3,4630.0,15.7,Value for Money,Standard
+IND-2026-169,Microwave Oven,Grill,Havells,3,11580.0,49.5,Value for Money,Standard
+IND-2026-170,Microwave Oven,Solo,Samsung,3,6750.0,31.5,Value for Money,Standard
+IND-2026-171,LED Light,Panel Light,LG,5,2190.0,0.9,Energy Saver,One-time Premium
+IND-2026-172,LED Light,Smart LED,Daikin,4,1660.0,2.4,Value for Money,Standard
+IND-2026-173,LED Light,Smart LED,Havells,5,650.0,1.2,Energy Saver,One-time Premium
+IND-2026-174,Smart TV,LED,Bosch,3,24660.0,108.0,Value for Money,Standard
+IND-2026-175,Microwave Oven,Convection,Philips,3,15720.0,72.0,Value for Money,Standard
+IND-2026-176,Air Conditioner,Split Inverter,Havells,5,56550.0,72.0,Energy Saver,One-time Premium
+IND-2026-177,Smart TV,LED,Samsung,4,26220.0,72.0,Value for Money,Standard
+IND-2026-178,Ceiling Fan,Induction Motor,Daikin,5,2090.0,2.7,Energy Saver,One-time Premium
+IND-2026-179,Microwave Oven,Convection,Atomberg,3,16700.0,72.0,Value for Money,Standard
+IND-2026-180,Ceiling Fan,Induction Motor,Daikin,3,1540.0,8.1,Value for Money,Standard
+IND-2026-181,Microwave Oven,Solo,Samsung,4,8040.0,21.0,Value for Money,Standard
+IND-2026-182,LED Light,Batten/Tube,Bosch,3,400.0,2.0,Value for Money,Standard
+IND-2026-183,Mixer Grinder,Food Processor,LG,4,10680.0,27.0,Value for Money,Standard
+IND-2026-184,Air Conditioner,Window,LG,3,32370.0,144.0,Value for Money,Standard
+IND-2026-185,Mixer Grinder,Food Processor,LG,4,10720.0,27.0,Value for Money,Standard
+IND-2026-186,LED Light,Batten/Tube,Preethi,3,1160.0,2.0,Value for Money,Standard
+IND-2026-187,Smart TV,LED,Atomberg,4,26670.0,72.0,Value for Money,Standard
+IND-2026-188,Microwave Oven,Convection,Philips,4,17410.0,48.0,Value for Money,Standard
+IND-2026-189,Ceiling Fan,Induction Motor,Daikin,3,2790.0,8.1,Value for Money,Standard
+IND-2026-190,Smart TV,LED,Havells,3,23900.0,108.0,Value for Money,Standard
+IND-2026-191,Washing Machine,Front Load,Havells,5,40140.0,52.5,Energy Saver,One-time Premium
+IND-2026-192,Refrigerator,Double Door,LG,3,33330.0,144.0,Value for Money,Standard
+IND-2026-193,Water Purifier,Gravity/Non-Electric,LG,5,4150.0,4.5,Energy Saver,One-time Premium
+IND-2026-194,Ceiling Fan,BLDC Motor,Preethi,3,4760.0,15.7,Value for Money,One-time Premium
+IND-2026-195,Refrigerator,Side-by-Side,Philips,3,84590.0,382.5,Value for Money,Standard
+IND-2026-196,Ceiling Fan,Induction Motor,Philips,4,1820.0,5.4,Value for Money,Standard
+IND-2026-197,Washing Machine,Top Load,Preethi,4,23260.0,66.0,Value for Money,Standard
+IND-2026-198,Refrigerator,Single Door,Preethi,3,19160.0,81.0,Value for Money,Standard
+IND-2026-199,Ceiling Fan,Induction Motor,Pureit,3,2050.0,8.1,Value for Money,Standard
+IND-2026-200,Water Purifier,RO + UV + MTDS,Samsung,3,15980.0,67.5,Value for Money,Standard
+IND-2026-201,Air Conditioner,Split Inverter,Preethi,5,56370.0,72.0,Energy Saver,One-time Premium
+IND-2026-202,Mixer Grinder,Food Processor,Havells,5,11290.0,13.5,Energy Saver,One-time Premium
+IND-2026-203,Water Purifier,Gravity/Non-Electric,Atomberg,3,3320.0,13.5,Value for Money,Standard
+IND-2026-204,Air Conditioner,Split Non-Inverter,LG,3,38140.0,171.0,Value for Money,One-time Premium
+IND-2026-205,Ceiling Fan,BLDC Motor,Philips,5,3590.0,5.2,Energy Saver,One-time Premium
+IND-2026-206,Air Conditioner,Split Inverter,Havells,4,51930.0,144.0,Value for Money,One-time Premium
+IND-2026-207,Refrigerator,Double Door,Pureit,5,38240.0,48.0,Energy Saver,One-time Premium
+IND-2026-208,Mixer Grinder,Juicer Mixer (JMG),Pureit,3,5710.0,24.7,Value for Money,Standard
+IND-2026-209,Ceiling Fan,BLDC Motor,LG,5,4200.0,5.2,Energy Saver,One-time Premium
+IND-2026-210,Smart TV,QLED,LG,3,56280.0,247.5,Value for Money,Standard
+IND-2026-211,Smart TV,OLED,Samsung,3,109840.0,495.0,Value for Money,Standard
+IND-2026-212,Refrigerator,Double Door,Pureit,4,35410.0,96.0,Value for Money,Standard
+IND-2026-213,Ceiling Fan,Induction Motor,Pureit,4,2790.0,5.4,Value for Money,Standard
+IND-2026-214,Refrigerator,Side-by-Side,Samsung,5,99730.0,127.5,Energy Saver,One-time Premium
+IND-2026-215,Microwave Oven,Convection,Daikin,4,17920.0,48.0,Value for Money,Standard
+IND-2026-216,Refrigerator,Double Door,Pureit,3,32900.0,144.0,Value for Money,Standard
+IND-2026-217,Water Purifier,RO + UV + MTDS,Pureit,4,17170.0,45.0,Value for Money,Standard
+IND-2026-218,Microwave Oven,Grill,Atomberg,3,10960.0,49.5,Value for Money,Standard
+IND-2026-219,Ceiling Fan,Induction Motor,Atomberg,3,3230.0,8.1,Value for Money,Standard
+IND-2026-220,Refrigerator,Side-by-Side,Preethi,4,93120.0,255.0,Value for Money,Standard
+IND-2026-221,Mixer Grinder,Standard 3-Jar,Samsung,5,4320.0,5.2,Energy Saver,One-time Premium
+IND-2026-222,Smart TV,QLED,Atomberg,4,59180.0,165.0,Value for Money,Standard
+IND-2026-223,Microwave Oven,Grill,Preethi,3,11630.0,49.5,Value for Money,Standard
+IND-2026-224,Microwave Oven,Convection,Bosch,3,17400.0,72.0,Value for Money,Standard
+IND-2026-225,Microwave Oven,Convection,Preethi,4,17290.0,48.0,Value for Money,Standard
+IND-2026-226,Water Purifier,Gravity/Non-Electric,Samsung,5,4200.0,4.5,Energy Saver,One-time Premium
+IND-2026-227,Ceiling Fan,Induction Motor,LG,5,1650.0,2.7,Energy Saver,One-time Premium
+IND-2026-228,Refrigerator,Single Door,Philips,4,19520.0,54.0,Value for Money,Standard
+IND-2026-229,Mixer Grinder,Food Processor,Havells,3,9740.0,40.5,Value for Money,Standard
+IND-2026-230,Washing Machine,Top Load,Daikin,5,25170.0,33.0,Energy Saver,One-time Premium
+IND-2026-231,LED Light,Panel Light,Preethi,3,480.0,2.7,Value for Money,Standard
+IND-2026-232,Refrigerator,Double Door,Pureit,3,32040.0,144.0,Value for Money,Standard
+IND-2026-233,Microwave Oven,Solo,Havells,3,7650.0,31.5,Value for Money,Standard
+IND-2026-234,Water Purifier,Gravity/Non-Electric,Bosch,3,3330.0,13.5,Value for Money,Standard
+IND-2026-235,Mixer Grinder,Food Processor,Preethi,5,11360.0,13.5,Energy Saver,One-time Premium
+IND-2026-236,Smart TV,OLED,Preethi,5,129050.0,165.0,Energy Saver,One-time Premium
+IND-2026-237,Washing Machine,Top Load,LG,3,22720.0,99.0,Value for Money,Standard
+IND-2026-238,Ceiling Fan,Induction Motor,Samsung,5,2430.0,2.7,Energy Saver,One-time Premium
+IND-2026-239,LED Light,Smart LED,Samsung,5,1990.0,1.2,Energy Saver,One-time Premium
+IND-2026-240,Microwave Oven,Solo,Havells,4,7330.0,21.0,Value for Money,Standard
+IND-2026-241,LED Light,Smart LED,Preethi,5,1930.0,1.2,Energy Saver,One-time Premium
+IND-2026-242,Mixer Grinder,Food Processor,Samsung,5,11360.0,13.5,Energy Saver,One-time Premium
+IND-2026-243,Microwave Oven,Solo,Atomberg,4,8260.0,21.0,Value for Money,Standard
+IND-2026-244,Mixer Grinder,Food Processor,Bosch,5,10410.0,13.5,Energy Saver,One-time Premium
+IND-2026-245,Washing Machine,Semi-Automatic,Philips,5,16300.0,21.0,Energy Saver,One-time Premium
+IND-2026-246,Washing Machine,Front Load,Philips,5,41730.0,52.5,Energy Saver,One-time Premium
+IND-2026-247,Washing Machine,Top Load,Havells,3,21760.0,99.0,Value for Money,Standard
+IND-2026-248,Ceiling Fan,BLDC Motor,Daikin,5,5140.0,5.2,Energy Saver,One-time Premium
+IND-2026-249,Water Purifier,UV + UF,Preethi,4,9470.0,27.0,Value for Money,Standard
+IND-2026-250,Washing Machine,Front Load,Samsung,3,35600.0,157.5,Value for Money,Standard
+IND-2026-251,Refrigerator,Side-by-Side,Atomberg,4,93080.0,255.0,Value for Money,Standard
+IND-2026-252,LED Light,Smart LED,LG,4,1240.0,2.4,Value for Money,Standard
+IND-2026-253,Smart TV,QLED,Philips,4,60510.0,165.0,Value for Money,Standard
+IND-2026-254,Microwave Oven,Grill,Samsung,3,11430.0,49.5,Value for Money,Standard
+IND-2026-255,Smart TV,OLED,LG,3,109710.0,495.0,Value for Money,Standard
+IND-2026-256,Microwave Oven,Solo,Bosch,5,9360.0,10.5,Energy Saver,One-time Premium
+IND-2026-257,Mixer Grinder,Juicer Mixer (JMG),Pureit,3,6360.0,24.7,Value for Money,Standard
+IND-2026-258,LED Light,Panel Light,LG,3,1180.0,2.7,Value for Money,Standard
+IND-2026-259,Mixer Grinder,Juicer Mixer (JMG),Samsung,3,5690.0,24.7,Value for Money,Standard
+IND-2026-260,Air Conditioner,Split Non-Inverter,Pureit,3,37990.0,171.0,Value for Money,One-time Premium
+IND-2026-261,Smart TV,OLED,Daikin,4,120160.0,330.0,Value for Money,Standard
+IND-2026-262,Ceiling Fan,BLDC Motor,Bosch,3,4220.0,15.7,Value for Money,One-time Premium
+IND-2026-263,Refrigerator,Double Door,LG,4,34180.0,96.0,Value for Money,Standard
+IND-2026-264,LED Light,Panel Light,Havells,4,1530.0,1.8,Value for Money,Standard
+IND-2026-265,LED Light,Panel Light,Philips,3,1540.0,2.7,Value for Money,Standard
+IND-2026-266,Smart TV,QLED,Pureit,5,65040.0,82.5,Energy Saver,One-time Premium
+IND-2026-267,Ceiling Fan,Induction Motor,Havells,5,3420.0,2.7,Energy Saver,One-time Premium
+IND-2026-268,Mixer Grinder,Standard 3-Jar,Preethi,4,3860.0,10.5,Value for Money,Standard
+IND-2026-269,Smart TV,LED,Pureit,4,26070.0,72.0,Value for Money,Standard
+IND-2026-270,Air Conditioner,Split Inverter,Havells,5,55620.0,72.0,Energy Saver,One-time Premium
+IND-2026-271,LED Light,Batten/Tube,Daikin,3,910.0,2.0,Value for Money,Standard
+IND-2026-272,Water Purifier,RO + UV + MTDS,Atomberg,5,18210.0,22.5,Energy Saver,One-time Premium
+IND-2026-273,Smart TV,QLED,Bosch,4,59840.0,165.0,Value for Money,Standard
+IND-2026-274,Washing Machine,Top Load,LG,3,22090.0,99.0,Value for Money,Standard
+IND-2026-275,Smart TV,QLED,Philips,5,64570.0,82.5,Energy Saver,One-time Premium
+IND-2026-276,Ceiling Fan,Induction Motor,Samsung,4,2060.0,5.4,Value for Money,Standard
+IND-2026-277,Smart TV,LED,Preethi,4,25900.0,72.0,Value for Money,Standard
+IND-2026-278,Water Purifier,RO + UV + MTDS,Bosch,3,14800.0,67.5,Value for Money,Standard
+IND-2026-279,Water Purifier,Gravity/Non-Electric,Bosch,4,3370.0,9.0,Value for Money,Standard
+IND-2026-280,Washing Machine,Top Load,Samsung,3,23490.0,99.0,Value for Money,Standard
+IND-2026-281,Air Conditioner,Split Non-Inverter,Preethi,3,37550.0,171.0,Value for Money,One-time Premium
+IND-2026-282,LED Light,Smart LED,Pureit,3,1890.0,3.6,Value for Money,Standard
+IND-2026-283,Microwave Oven,Solo,Atomberg,3,7710.0,31.5,Value for Money,Standard
+IND-2026-284,Refrigerator,Side-by-Side,Atomberg,4,92370.0,255.0,Value for Money,Standard
+IND-2026-285,LED Light,Smart LED,Atomberg,3,1680.0,3.6,Value for Money,Standard
+IND-2026-286,Refrigerator,Double Door,Havells,3,31600.0,144.0,Value for Money,Standard
+IND-2026-287,Water Purifier,RO + UV + MTDS,Preethi,3,15000.0,67.5,Value for Money,Standard
+IND-2026-288,Washing Machine,Top Load,Bosch,3,22860.0,99.0,Value for Money,Standard
+IND-2026-289,LED Light,Panel Light,Preethi,4,1360.0,1.8,Value for Money,Standard
+IND-2026-290,Air Conditioner,Split Non-Inverter,Philips,4,40990.0,114.0,Value for Money,One-time Premium
+IND-2026-291,Water Purifier,RO + UV + MTDS,LG,5,17540.0,22.5,Energy Saver,One-time Premium
+IND-2026-292,Washing Machine,Front Load,Preethi,3,36050.0,157.5,Value for Money,Standard
+IND-2026-293,Ceiling Fan,Induction Motor,Havells,5,2660.0,2.7,Energy Saver,One-time Premium
+IND-2026-294,Refrigerator,Single Door,Pureit,4,20460.0,54.0,Value for Money,Standard
+IND-2026-295,Washing Machine,Top Load,Philips,3,22460.0,99.0,Value for Money,Standard
+IND-2026-296,Water Purifier,Gravity/Non-Electric,Daikin,4,4310.0,9.0,Value for Money,Standard
+IND-2026-297,LED Light,Panel Light,Havells,3,810.0,2.7,Value for Money,Standard
+IND-2026-298,Microwave Oven,Grill,Philips,5,13840.0,16.5,Energy Saver,One-time Premium
+IND-2026-299,Ceiling Fan,Induction Motor,Daikin,4,3090.0,5.4,Value for Money,Standard
+IND-2026-300,Mixer Grinder,Juicer Mixer (JMG),Pureit,3,6940.0,24.7,Value for Money,Standard
+IND-2026-301,Mixer Grinder,Juicer Mixer (JMG),Bosch,3,6580.0,24.7,Value for Money,Standard
+IND-2026-302,Mixer Grinder,Food Processor,Atomberg,4,9650.0,27.0,Value for Money,Standard
+IND-2026-303,Ceiling Fan,BLDC Motor,Pureit,5,4700.0,5.2,Energy Saver,One-time Premium
+IND-2026-304,Ceiling Fan,BLDC Motor,Philips,3,4140.0,15.7,Value for Money,One-time Premium
+IND-2026-305,Washing Machine,Front Load,Atomberg,4,38020.0,105.0,Value for Money,Standard
+IND-2026-306,LED Light,Smart LED,Bosch,3,700.0,3.6,Value for Money,Standard
+IND-2026-307,Water Purifier,Gravity/Non-Electric,Daikin,4,2760.0,9.0,Value for Money,Standard
+IND-2026-308,Washing Machine,Top Load,Preethi,4,25110.0,66.0,Value for Money,Standard
+IND-2026-309,Water Purifier,Gravity/Non-Electric,Preethi,5,3730.0,4.5,Energy Saver,One-time Premium
+IND-2026-310,Refrigerator,Side-by-Side,Preethi,4,91780.0,255.0,Value for Money,Standard
+IND-2026-311,Smart TV,OLED,Samsung,5,128840.0,165.0,Energy Saver,One-time Premium
+IND-2026-312,Washing Machine,Semi-Automatic,Atomberg,5,17510.0,21.0,Energy Saver,One-time Premium
+IND-2026-313,Smart TV,QLED,Preethi,5,65110.0,82.5,Energy Saver,One-time Premium
+IND-2026-314,Mixer Grinder,Food Processor,Pureit,4,10410.0,27.0,Value for Money,Standard
+IND-2026-315,LED Light,Panel Light,Bosch,5,1840.0,0.9,Energy Saver,One-time Premium
+IND-2026-316,Microwave Oven,Solo,LG,3,8450.0,31.5,Value for Money,Standard
+IND-2026-317,Refrigerator,Single Door,LG,4,19220.0,54.0,Value for Money,Standard
+IND-2026-318,Ceiling Fan,Induction Motor,LG,4,3110.0,5.4,Value for Money,Standard
+IND-2026-319,Mixer Grinder,Food Processor,Bosch,3,9250.0,40.5,Value for Money,Standard
+IND-2026-320,Washing Machine,Top Load,Samsung,3,22350.0,99.0,Value for Money,Standard
+IND-2026-321,LED Light,Batten/Tube,Bosch,4,920.0,1.3,Value for Money,Standard
+IND-2026-322,Microwave Oven,Grill,Daikin,3,11060.0,49.5,Value for Money,Standard
+IND-2026-323,Refrigerator,Single Door,Philips,5,20900.0,27.0,Energy Saver,One-time Premium
+IND-2026-324,Smart TV,OLED,Preethi,4,119620.0,330.0,Value for Money,Standard
+IND-2026-325,Ceiling Fan,BLDC Motor,Daikin,5,4550.0,5.2,Energy Saver,One-time Premium
+IND-2026-326,Water Purifier,UV + UF,Preethi,3,9850.0,40.5,Value for Money,Standard
+IND-2026-327,Air Conditioner,Window,Bosch,3,33070.0,144.0,Value for Money,Standard
+IND-2026-328,Air Conditioner,Window,Havells,4,35780.0,96.0,Value for Money,Standard
+IND-2026-329,Mixer Grinder,Standard 3-Jar,Daikin,4,4300.0,10.5,Value for Money,Standard
+IND-2026-330,Washing Machine,Front Load,Daikin,4,38140.0,105.0,Value for Money,Standard
+IND-2026-331,Refrigerator,Double Door,Samsung,3,32640.0,144.0,Value for Money,Standard
+IND-2026-332,Water Purifier,Gravity/Non-Electric,Pureit,5,3020.0,4.5,Energy Saver,One-time Premium
+IND-2026-333,Microwave Oven,Grill,Philips,3,11500.0,49.5,Value for Money,Standard
+IND-2026-334,Water Purifier,RO + UV + MTDS,Pureit,3,15860.0,67.5,Value for Money,Standard
+IND-2026-335,Microwave Oven,Solo,Atomberg,3,7640.0,31.5,Value for Money,Standard
+IND-2026-336,Ceiling Fan,BLDC Motor,Havells,5,5100.0,5.2,Energy Saver,One-time Premium
+IND-2026-337,LED Light,Batten/Tube,Atomberg,3,-20.0,2.0,Value for Money,Standard
+IND-2026-338,Refrigerator,Side-by-Side,Bosch,4,92810.0,255.0,Value for Money,Standard
+IND-2026-339,Microwave Oven,Solo,Daikin,5,8850.0,10.5,Energy Saver,One-time Premium
+IND-2026-340,Smart TV,LED,LG,5,27640.0,36.0,Energy Saver,One-time Premium
+IND-2026-341,Ceiling Fan,Induction Motor,Havells,5,1810.0,2.7,Energy Saver,One-time Premium
+IND-2026-342,Ceiling Fan,Induction Motor,Preethi,4,2540.0,5.4,Value for Money,Standard
+IND-2026-343,Smart TV,OLED,Atomberg,5,129100.0,165.0,Energy Saver,One-time Premium
+IND-2026-344,Ceiling Fan,BLDC Motor,Bosch,3,3250.0,15.7,Value for Money,One-time Premium
+IND-2026-345,Water Purifier,UV + UF,Havells,4,9590.0,27.0,Value for Money,Standard
+IND-2026-346,Washing Machine,Top Load,Preethi,4,24800.0,66.0,Value for Money,Standard
+IND-2026-347,Air Conditioner,Split Inverter,Havells,3,48070.0,216.0,Value for Money,One-time Premium
+IND-2026-348,Mixer Grinder,Food Processor,Philips,3,9880.0,40.5,Value for Money,Standard
+IND-2026-349,Refrigerator,Side-by-Side,LG,3,85110.0,382.5,Value for Money,Standard
+IND-2026-350,Ceiling Fan,Induction Motor,LG,4,3380.0,5.4,Value for Money,Standard
+IND-2026-351,Smart TV,QLED,Philips,4,59940.0,165.0,Value for Money,Standard
+IND-2026-352,Refrigerator,Single Door,LG,3,18900.0,81.0,Value for Money,Standard
+IND-2026-353,Refrigerator,Double Door,Preethi,4,34700.0,96.0,Value for Money,Standard
+IND-2026-354,Ceiling Fan,Induction Motor,Samsung,5,3320.0,2.7,Energy Saver,One-time Premium
+IND-2026-355,Microwave Oven,Convection,Samsung,5,19180.0,24.0,Energy Saver,One-time Premium
+IND-2026-356,Smart TV,QLED,Preethi,5,65110.0,82.5,Energy Saver,One-time Premium
+IND-2026-357,Microwave Oven,Convection,Philips,4,17560.0,48.0,Value for Money,Standard
+IND-2026-358,Microwave Oven,Convection,Pureit,3,16690.0,72.0,Value for Money,Standard
+IND-2026-359,Water Purifier,Gravity/Non-Electric,Samsung,4,4140.0,9.0,Value for Money,Standard
+IND-2026-360,Washing Machine,Semi-Automatic,Pureit,5,17030.0,21.0,Energy Saver,One-time Premium
+IND-2026-361,Washing Machine,Front Load,Atomberg,4,38510.0,105.0,Value for Money,Standard
+IND-2026-362,Ceiling Fan,Induction Motor,Bosch,4,2860.0,5.4,Value for Money,Standard
+IND-2026-363,Refrigerator,Single Door,Havells,3,17830.0,81.0,Value for Money,Standard
+IND-2026-364,Air Conditioner,Window,Pureit,3,32000.0,144.0,Value for Money,Standard
+IND-2026-365,Air Conditioner,Split Inverter,Philips,4,51850.0,144.0,Value for Money,One-time Premium
+IND-2026-366,Ceiling Fan,BLDC Motor,Preethi,3,3690.0,15.7,Value for Money,One-time Premium
+IND-2026-367,Washing Machine,Semi-Automatic,Samsung,4,14820.0,42.0,Value for Money,Standard
+IND-2026-368,Smart TV,QLED,Pureit,4,60830.0,165.0,Value for Money,Standard
+IND-2026-369,Ceiling Fan,Induction Motor,Bosch,5,2720.0,2.7,Energy Saver,One-time Premium
+IND-2026-370,Smart TV,QLED,Havells,5,64660.0,82.5,Energy Saver,One-time Premium
+IND-2026-371,Washing Machine,Front Load,Bosch,3,35280.0,157.5,Value for Money,Standard
+IND-2026-372,Smart TV,OLED,Bosch,5,127720.0,165.0,Energy Saver,One-time Premium
+IND-2026-373,Microwave Oven,Grill,Preethi,3,11770.0,49.5,Value for Money,Standard
+IND-2026-374,Smart TV,OLED,Pureit,3,111400.0,495.0,Value for Money,Standard
+IND-2026-375,Smart TV,OLED,Pureit,5,127730.0,165.0,Energy Saver,One-time Premium
+IND-2026-376,Washing Machine,Front Load,LG,3,34730.0,157.5,Value for Money,Standard
+IND-2026-377,Air Conditioner,Split Inverter,LG,5,55890.0,72.0,Energy Saver,One-time Premium
+IND-2026-378,Air Conditioner,Window,LG,3,31580.0,144.0,Value for Money,Standard
+IND-2026-379,Washing Machine,Top Load,Preethi,3,22330.0,99.0,Value for Money,Standard
+IND-2026-380,Refrigerator,Single Door,LG,3,18440.0,81.0,Value for Money,Standard
+IND-2026-381,Ceiling Fan,BLDC Motor,Pureit,4,4090.0,10.5,Value for Money,One-time Premium
+IND-2026-382,Water Purifier,UV + UF,Bosch,4,10890.0,27.0,Value for Money,Standard
+IND-2026-383,Microwave Oven,Solo,Atomberg,5,9390.0,10.5,Energy Saver,One-time Premium
+IND-2026-384,Ceiling Fan,Induction Motor,Preethi,5,3350.0,2.7,Energy Saver,One-time Premium
+IND-2026-385,Washing Machine,Semi-Automatic,Atomberg,4,16260.0,42.0,Value for Money,Standard
+IND-2026-386,Microwave Oven,Grill,Samsung,3,12190.0,49.5,Value for Money,Standard
+IND-2026-387,Microwave Oven,Convection,Philips,5,18610.0,24.0,Energy Saver,One-time Premium
+IND-2026-388,Ceiling Fan,BLDC Motor,LG,3,3010.0,15.7,Value for Money,One-time Premium
+IND-2026-389,LED Light,Panel Light,Daikin,3,1780.0,2.7,Value for Money,Standard
+IND-2026-390,Water Purifier,Gravity/Non-Electric,Samsung,4,2990.0,9.0,Value for Money,Standard
+IND-2026-391,Water Purifier,RO + UV + MTDS,Preethi,5,18210.0,22.5,Energy Saver,One-time Premium
+IND-2026-392,Microwave Oven,Solo,Bosch,3,8130.0,31.5,Value for Money,Standard
+IND-2026-393,Water Purifier,UV + UF,Atomberg,4,9680.0,27.0,Value for Money,Standard
+IND-2026-394,Washing Machine,Front Load,Philips,3,34920.0,157.5,Value for Money,Standard
+IND-2026-395,Air Conditioner,Split Inverter,Pureit,4,52840.0,144.0,Value for Money,One-time Premium
+IND-2026-396,Ceiling Fan,Induction Motor,Samsung,4,2280.0,5.4,Value for Money,Standard
+IND-2026-397,Smart TV,LED,Pureit,5,28340.0,36.0,Energy Saver,One-time Premium
+IND-2026-398,Smart TV,QLED,Samsung,4,59600.0,165.0,Value for Money,Standard
+IND-2026-399,Smart TV,OLED,Atomberg,3,110300.0,495.0,Value for Money,Standard
+IND-2026-400,Water Purifier,Gravity/Non-Electric,Bosch,5,4180.0,4.5,Energy Saver,One-time Premium
+IND-2026-401,Refrigerator,Double Door,Atomberg,5,37350.0,48.0,Energy Saver,One-time Premium
+IND-2026-402,Washing Machine,Top Load,Preethi,5,25940.0,33.0,Energy Saver,One-time Premium
+IND-2026-403,Refrigerator,Single Door,Havells,3,18320.0,81.0,Value for Money,Standard
+IND-2026-404,Mixer Grinder,Juicer Mixer (JMG),Bosch,5,6540.0,8.2,Energy Saver,One-time Premium
+IND-2026-405,Smart TV,OLED,LG,3,110360.0,495.0,Value for Money,Standard
+IND-2026-406,Smart TV,OLED,Preethi,5,128030.0,165.0,Energy Saver,One-time Premium
+IND-2026-407,Smart TV,QLED,Preethi,3,55380.0,247.5,Value for Money,Standard
+IND-2026-408,Air Conditioner,Split Non-Inverter,Havells,5,44250.0,57.0,Energy Saver,One-time Premium
+IND-2026-409,Mixer Grinder,Food Processor,Samsung,3,9350.0,40.5,Value for Money,Standard
+IND-2026-410,Washing Machine,Top Load,Daikin,4,24680.0,66.0,Value for Money,Standard
+IND-2026-411,Mixer Grinder,Juicer Mixer (JMG),Preethi,3,5300.0,24.7,Value for Money,Standard
+IND-2026-412,Washing Machine,Semi-Automatic,Daikin,5,16580.0,21.0,Energy Saver,One-time Premium
+IND-2026-413,Refrigerator,Single Door,Bosch,3,19220.0,81.0,Value for Money,Standard
+IND-2026-414,Smart TV,LED,LG,3,25360.0,108.0,Value for Money,Standard
+IND-2026-415,LED Light,Panel Light,Pureit,5,220.0,0.9,Energy Saver,One-time Premium
+IND-2026-416,Washing Machine,Top Load,Bosch,4,23550.0,66.0,Value for Money,Standard
+IND-2026-417,Mixer Grinder,Food Processor,Daikin,5,10550.0,13.5,Energy Saver,One-time Premium
+IND-2026-418,Microwave Oven,Convection,Atomberg,3,16180.0,72.0,Value for Money,Standard
+IND-2026-419,Smart TV,LED,Bosch,4,25590.0,72.0,Value for Money,Standard
+IND-2026-420,Microwave Oven,Solo,Daikin,5,8080.0,10.5,Energy Saver,One-time Premium
+IND-2026-421,LED Light,Panel Light,Bosch,5,1460.0,0.9,Energy Saver,One-time Premium
+IND-2026-422,Ceiling Fan,Induction Motor,LG,4,1960.0,5.4,Value for Money,Standard
+IND-2026-423,LED Light,Panel Light,Atomberg,5,1800.0,0.9,Energy Saver,One-time Premium
+IND-2026-424,Refrigerator,Single Door,Atomberg,3,18170.0,81.0,Value for Money,Standard
+IND-2026-425,Smart TV,LED,Havells,3,23870.0,108.0,Value for Money,Standard
+IND-2026-426,Refrigerator,Side-by-Side,Bosch,3,85940.0,382.5,Value for Money,Standard
+IND-2026-427,Air Conditioner,Window,Havells,3,33040.0,144.0,Value for Money,Standard
+IND-2026-428,Ceiling Fan,Induction Motor,Havells,4,1820.0,5.4,Value for Money,Standard
+IND-2026-429,Microwave Oven,Convection,Bosch,3,15520.0,72.0,Value for Money,Standard
+IND-2026-430,Washing Machine,Front Load,Pureit,3,35780.0,157.5,Value for Money,Standard
+IND-2026-431,LED Light,Panel Light,Pureit,4,790.0,1.8,Value for Money,Standard
+IND-2026-432,Washing Machine,Top Load,Pureit,4,23790.0,66.0,Value for Money,Standard
+IND-2026-433,Microwave Oven,Grill,Philips,4,11620.0,33.0,Value for Money,Standard
+IND-2026-434,LED Light,Panel Light,Pureit,3,1740.0,2.7,Value for Money,Standard
+IND-2026-435,Microwave Oven,Grill,Pureit,4,11660.0,33.0,Value for Money,Standard
+IND-2026-436,Microwave Oven,Solo,Pureit,5,8640.0,10.5,Energy Saver,One-time Premium
+IND-2026-437,LED Light,Panel Light,Preethi,3,150.0,2.7,Value for Money,Standard
+IND-2026-438,Refrigerator,Single Door,Bosch,4,20910.0,54.0,Value for Money,Standard
+IND-2026-439,Smart TV,LED,Havells,5,28810.0,36.0,Energy Saver,One-time Premium
+IND-2026-440,Air Conditioner,Split Inverter,Atomberg,3,49330.0,216.0,Value for Money,One-time Premium
+IND-2026-441,Microwave Oven,Grill,Atomberg,5,13840.0,16.5,Energy Saver,One-time Premium
+IND-2026-442,Water Purifier,RO + UV + MTDS,Havells,4,17140.0,45.0,Value for Money,Standard
+IND-2026-443,Mixer Grinder,Food Processor,Preethi,3,10420.0,40.5,Value for Money,Standard
+IND-2026-444,Water Purifier,Gravity/Non-Electric,Philips,3,3040.0,13.5,Value for Money,Standard
+IND-2026-445,Refrigerator,Side-by-Side,Daikin,4,91850.0,255.0,Value for Money,Standard
+IND-2026-446,Refrigerator,Side-by-Side,Philips,4,92790.0,255.0,Value for Money,Standard
+IND-2026-447,Smart TV,QLED,LG,3,56090.0,247.5,Value for Money,Standard
+IND-2026-448,Microwave Oven,Convection,Preethi,5,18340.0,24.0,Energy Saver,One-time Premium
+IND-2026-449,Air Conditioner,Window,Daikin,5,38110.0,48.0,Energy Saver,One-time Premium
+IND-2026-450,Air Conditioner,Split Non-Inverter,Bosch,5,44320.0,57.0,Energy Saver,One-time Premium
+IND-2026-451,Microwave Oven,Solo,Pureit,5,9390.0,10.5,Energy Saver,One-time Premium
+IND-2026-452,Washing Machine,Front Load,Havells,3,36110.0,157.5,Value for Money,Standard
+IND-2026-453,Mixer Grinder,Standard 3-Jar,Daikin,3,4860.0,15.7,Value for Money,Standard
+IND-2026-454,LED Light,Batten/Tube,Havells,4,1810.0,1.3,Value for Money,Standard
+IND-2026-455,Air Conditioner,Split Non-Inverter,Samsung,3,39440.0,171.0,Value for Money,One-time Premium
+IND-2026-456,Ceiling Fan,BLDC Motor,Havells,3,3000.0,15.7,Value for Money,One-time Premium
+IND-2026-457,Smart TV,QLED,LG,3,55350.0,247.5,Value for Money,Standard
+IND-2026-458,Microwave Oven,Grill,Bosch,3,12390.0,49.5,Value for Money,Standard
+IND-2026-459,Refrigerator,Single Door,Daikin,5,21200.0,27.0,Energy Saver,One-time Premium
+IND-2026-460,Water Purifier,UV + UF,LG,4,10700.0,27.0,Value for Money,Standard
+IND-2026-461,Refrigerator,Double Door,Samsung,4,35300.0,96.0,Value for Money,Standard
+IND-2026-462,Smart TV,QLED,Samsung,3,55440.0,247.5,Value for Money,Standard
+IND-2026-463,Microwave Oven,Convection,Havells,4,17260.0,48.0,Value for Money,Standard
+IND-2026-464,Ceiling Fan,Induction Motor,LG,3,1620.0,8.1,Value for Money,Standard
+IND-2026-465,Water Purifier,UV + UF,Preethi,5,10220.0,13.5,Energy Saver,One-time Premium
+IND-2026-466,LED Light,Smart LED,Havells,3,1890.0,3.6,Value for Money,Standard
+IND-2026-467,Mixer Grinder,Food Processor,Samsung,4,9780.0,27.0,Value for Money,Standard
+IND-2026-468,Refrigerator,Double Door,Samsung,4,34170.0,96.0,Value for Money,Standard
+IND-2026-469,Refrigerator,Single Door,Atomberg,5,20520.0,27.0,Energy Saver,One-time Premium
+IND-2026-470,Microwave Oven,Grill,Havells,4,13230.0,33.0,Value for Money,Standard
+IND-2026-471,Mixer Grinder,Standard 3-Jar,Daikin,5,5170.0,5.2,Energy Saver,One-time Premium
+IND-2026-472,Water Purifier,UV + UF,Bosch,5,10020.0,13.5,Energy Saver,One-time Premium
+IND-2026-473,Refrigerator,Single Door,Daikin,4,19920.0,54.0,Value for Money,Standard
+IND-2026-474,Refrigerator,Side-by-Side,Preethi,5,99690.0,127.5,Energy Saver,One-time Premium
+IND-2026-475,Microwave Oven,Grill,Pureit,5,13650.0,16.5,Energy Saver,One-time Premium
+IND-2026-476,Water Purifier,Gravity/Non-Electric,Samsung,5,3890.0,4.5,Energy Saver,One-time Premium
+IND-2026-477,Ceiling Fan,BLDC Motor,Havells,5,3560.0,5.2,Energy Saver,One-time Premium
+IND-2026-478,Mixer Grinder,Juicer Mixer (JMG),Preethi,5,6160.0,8.2,Energy Saver,One-time Premium
+IND-2026-479,Smart TV,LED,Havells,4,25960.0,72.0,Value for Money,Standard
+IND-2026-480,Washing Machine,Top Load,Pureit,5,25280.0,33.0,Energy Saver,One-time Premium
+IND-2026-481,Water Purifier,Gravity/Non-Electric,Preethi,5,4060.0,4.5,Energy Saver,One-time Premium
+IND-2026-482,LED Light,Smart LED,Havells,5,1550.0,1.2,Energy Saver,One-time Premium
+IND-2026-483,Air Conditioner,Split Inverter,Daikin,4,53220.0,144.0,Value for Money,One-time Premium
+IND-2026-484,LED Light,Smart LED,Samsung,3,1560.0,3.6,Value for Money,Standard
+IND-2026-485,Smart TV,LED,Daikin,5,27830.0,36.0,Energy Saver,One-time Premium
+IND-2026-486,Washing Machine,Front Load,Preethi,4,38130.0,105.0,Value for Money,Standard
+IND-2026-487,Water Purifier,Gravity/Non-Electric,Daikin,4,3780.0,9.0,Value for Money,Standard
+IND-2026-488,Refrigerator,Side-by-Side,Samsung,5,99270.0,127.5,Energy Saver,One-time Premium
+IND-2026-489,Microwave Oven,Solo,LG,4,7790.0,21.0,Value for Money,Standard
+IND-2026-490,Refrigerator,Single Door,Daikin,5,20840.0,27.0,Energy Saver,One-time Premium
+IND-2026-491,Microwave Oven,Solo,Atomberg,4,7990.0,21.0,Value for Money,Standard
+IND-2026-492,Air Conditioner,Split Inverter,Havells,4,53330.0,144.0,Value for Money,One-time Premium
+IND-2026-493,Refrigerator,Side-by-Side,Havells,5,98340.0,127.5,Energy Saver,One-time Premium
+IND-2026-494,Air Conditioner,Split Non-Inverter,Pureit,3,39020.0,171.0,Value for Money,One-time Premium
+IND-2026-495,Smart TV,LED,Philips,5,29300.0,36.0,Energy Saver,One-time Premium
+IND-2026-496,LED Light,Panel Light,Preethi,4,820.0,1.8,Value for Money,Standard
+IND-2026-497,LED Light,Panel Light,Daikin,4,1990.0,1.8,Value for Money,Standard
+IND-2026-498,Washing Machine,Top Load,Bosch,3,22890.0,99.0,Value for Money,Standard
+IND-2026-499,Ceiling Fan,Induction Motor,Atomberg,4,2380.0,5.4,Value for Money,Standard
+IND-2026-500,Ceiling Fan,BLDC Motor,Philips,4,4200.0,10.5,Value for Money,One-time Premium
